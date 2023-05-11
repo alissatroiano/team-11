@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    border: 1px solid #252525;
+    border-radius: 35px;
+    background: linear-gradient(225deg, #ffffff, #EFEFEF);
+    box-shadow:  -5px 8px 28px #666666, 5px 2px 28px #ffffff;
+    height: 600px;
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../images/background.webp);
+
+}

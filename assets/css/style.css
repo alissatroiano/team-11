@@ -28,10 +28,10 @@ body {
 
 /* Game page */
 #game {
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
-  background: url("../images/starwars.jpg") no-repeat center center;
-  /* background-color: black; */
+  background:  linear-gradient(#15161694, #3a3e3e24 43%, #18181887), url("../images/game.jpg") no-repeat center center;
+  background-size: cover;
   position: relative;
 }
 

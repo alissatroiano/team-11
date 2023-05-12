@@ -1,0 +1,12 @@
+.cover {
+    background: linear-gradient(#151616c2, #2f303054 43%, #181818b8), url('../images/space.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#game {
+    min-height: 100vh;
+    overflow: hidden;
+    background: url('../images/starwars.jpg') no-repeat center center;
+    /* background-color: black; */
+}

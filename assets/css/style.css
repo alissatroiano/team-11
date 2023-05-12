@@ -128,6 +128,63 @@ body {
 }
 
 
-
-
 /* End Game page */
+
+
+
+/* contact page */
+/* columns side by side */
+.column {
+  float: left;
+  width: 22.3%;
+  margin-bottom: 25px;
+  padding: 5px 10px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 10px 15px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  padding: 2px 13px;
+  text-align: center;
+  margin: 1px;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* End Contact page */

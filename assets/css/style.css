@@ -1,0 +1,133 @@
+@import url("https://fonts.cdnfonts.com/css/star-wars");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+:root {
+  --title: "star wars", serif;
+  --main-font: "share tech mono", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title);
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.cover {
+  background: linear-gradient(#151616c2, #2f303054 43%, #181818b8),
+    url("../images/space.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Game page */
+#game {
+  min-height: 100vh;
+  overflow: hidden;
+  background: url("../images/starwars.jpg") no-repeat center center;
+  /* background-color: black; */
+  position: relative;
+}
+
+.door-light {
+  background-color: red;
+  padding: 11px;
+  border-radius: 50%;
+}
+
+.door-light-1 {
+  position: absolute;
+  top: 90px;
+  left: 38%;
+}
+.door-light-2 {
+  position: absolute;
+  top: 90px;
+  left: 46%;
+}
+.door-light-3 {
+  position: absolute;
+  top: 90px;
+  left: 54%;
+}
+
+@media only screen and (min-width: 400px) {
+  .door-light-1 {
+    left: 40%;
+  }
+  .door-light-2 {
+    left: 47%;
+  }
+  .door-light-3 {
+    left: 54%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .door-light{
+    padding: 12px;
+  }
+  .door-light-1 {
+    left: 42%;
+  }
+  .door-light-2 {
+    left: 47%;
+  }
+  .door-light-3 {
+    left: 52%;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .door-light-1 {
+    left: 44%;
+  }
+  .door-light-2 {
+    left: 48%;
+  }
+  .door-light-3 {
+    left: 52%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .door-light-1 {
+    left: 46%;
+  }
+  .door-light-2 {
+    left: 49%;
+  }
+  .door-light-3 {
+    left: 52%;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .door-light {
+    padding: 13px;
+  }
+  
+  .door-light-1 {
+    top: 130px;
+    left: 47%;
+  }
+  .door-light-2 {
+    top: 130px;
+    left: 49%;
+  }
+  .door-light-3 {
+    top: 130px;
+    left: 51%;
+  }
+}
+
+
+
+
+/* End Game page */

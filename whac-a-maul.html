@@ -9,25 +9,22 @@
     <title>Whac-a-Maul</title>
 </head>
 
-
 <body>
     <div class="container-fluid whac-wrapper">
         <div class="whac-title">
             <h1>Whac-a-Maul</h1>
-            <p>Qui-Gon Jinn and Obi-Wan Kenobi need your help...</p>
-            <p>Darth Maul is back on Tattooine and this time he must be defeated!</p>
+            <p>Qui-Gon Jinn and Obi-Wan Kenobi need your help...<br>
+                Darth Maul is back on Tatooine and this time he must be defeated!</p>
         </div>
-
 
         <div class="whac-stats">
             <div>Score: <span class="whac-score"></span>0</div>
+            <div class="whac-start">
+                <button class="whac-start-btn">Start Game!</button>
+            </div>
             <div><span class="whac-timer">30</span> seconds</div>
         </div>
-        <div class="whac-start">
-            <button class="whac-start-btn">Start Game!</button>
-        </div>
-
-
+        
         <div class="container-fluid whac-game">
             <div class="row hole-wrapper">
                 <div class="col-6 col-md-4 hole" id="maul1">
@@ -51,5 +48,5 @@
             </div>
         </div>
     </div>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/whac-app.js"></script>
 </body>

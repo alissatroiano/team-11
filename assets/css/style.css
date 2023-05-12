@@ -1,0 +1,31 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+
+
+:root {
+    --title: 'star wars', serif;
+    --main-font: 'share tech mono', serif ;
+}
+
+
+h1, h2, h3, h4,  h5, h6 {
+    font-family: var(--title);
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+.cover {
+    background: linear-gradient(#151616c2, #2f303054 43%, #181818b8), url('../images/space.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#game {
+    min-height: 100vh;
+    overflow: hidden;
+    background: url('../images/starwars.jpg') no-repeat center center;
+    /* background-color: black; */
+}

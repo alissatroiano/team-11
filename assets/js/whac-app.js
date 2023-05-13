@@ -15,6 +15,7 @@ let score = 0;
 let countdown;
 
 function randomiseHole(holes) {
+    // Picks a hole at random, checks this was not the same as the last hole to be picked and returns the random hole
     const randomHole = Math.floor(Math.random() * holes.length);
     const pickedHole = holes[randomHole];
     if (pickedHole === previousHole) {
@@ -25,10 +26,12 @@ function randomiseHole(holes) {
 }
 
 function maulUp() {
+    // Declares a time window for the period the maul stays visible and makes this random for each pop up
+    // Sets timeout to the random 'time' period then removes 'up' class and runs maulUp again until timeUp is true
     const time = Math.random() * 1300 + 600;
     const hole = randomiseHole(holes);
     hole.classList.add('up');
-    setTimeout(function(){
+    setTimeout(() => {
         hole.classList.remove('up');
         if (!timeUp) { 
             maulUp();
@@ -61,13 +64,16 @@ function startGame() {
 
 
 function whackMaul(e){
+    // Increases score when maul whacked
+    // Removes pointer event so maul can't be whacked twice
+    // After timeout reinstates pointer event
     score++;
     this.style.backgroundImage = 'url(../images/maul-cartoon.webp)';
     this.style.pointerEvents = 'none';
     setTimeout(() => {
-        this.style.backgroundImage = 'url(../images/maul-cartoon.webp)';
         this.style.pointerEvents = 'all';
     }, 800);
     scoreDisplay.textContent = score;
 }
+
 mauls.forEach(maul => maul.addEventListener('click', whackMaul));

@@ -55,7 +55,6 @@ body {
 }
 
 .whac-game {
-    /* border: 3px solid #252525; */
     max-width: 600px;
     max-height: 400px;
     margin-bottom: 50px;
@@ -63,14 +62,12 @@ body {
 }
 
 .hole-wrapper {
-    /* border: 1px solid blue; */
     height: 100%;
     margin: 0;
     flex-wrap: wrap;
 }
 
 .hole {
-    /* border: 1px solid red; */
     min-height: 125px;
     min-width: fit-content;
     position: relative;

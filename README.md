@@ -36,21 +36,38 @@
     - This page shows the team of individuals who collaborated together to make this game
 - Links
     - Hovering over links will change its colour
+- Gameplay
+    - All mini games will be different and fun, while also relating to star wars.
 
 ## UX/UI SECTION  
-### Project Goals:
--  The goal of this project is to create a fun star wars themed escape room game. The site should be easy to navigate through, consistent with design, as well as make users want to visit again. It should be aesthetically pleasing with all text being clear to read, all generating a good user experience.  
+### Project Goals and Desgin choices:
+- The goal of this project is to create a fun star wars themed escape room game. 
+- There will be a star Wars scrolling style intro text which explains the story of what has happened so far and what you must do.
+- A space themed background which relates to star wars as it's set in space with different planets and galaxies. 
+- White text in navigation with a transparent background so the the text is easy to read over the space background image.
+- As all good websites have, each page will have a navigation menu at the top of the page. This will contain the headings play, how to play, and meet the team. This repetition is said to make user experiences better as users like it when a website has a common theme/layout, so that it then becomes quick and easy to learn and navigate through.
+- The first page is naturally the home page. This will have the title of the game along with a play button
+- The last page will be meeting the team. As this is the least important section of the website, it makes sense for it to be the last page.
+- All games and designs will be animated and remain consistent throughout. 
 
-### Design Choices:
-- The colour scheme of the website as a whole:
-    - A dark space themed background with white text. This is to mimic a star wars theme as its set in space with different planets and galaxies. 
+### User Stories:
+- As a new user:  
+    - I want to click on the logo and be taken to the home page.
+    - I want to click home and be taken to the home page.
+    - I want to click how to play and be provided with instructions on how I play this game.
+    - I want to click play and be taken to the game.
+    - I want to click on the mini games and be taken to the mini games.
+    - I want to click the linkedin and github links in the meet the team section and be taken to the individuals profile.
 
-- The structure of the website: 
-    - As all good websites have, each page will have a navigation menu at the top of the page. This will contain the headings play, how to play, and meet the team. This repetition is said to make user experiences better as users like it when a website has a common theme/layout, so that it then becomes quick and easy to learn and navigate through.
-    - The first page is naturally the home page. This will have the title of the game along with a play button
+- As a user into star wars:
+    - I want the game to be fun and realte as much as possible to stars wars
+    - I want to feel as though I am playing a star wars themed escape room and not just a generic escape room
 
-- The content provided in the website:
+### Wireframes:
+| Website page | screenshot | Website page | screenshot | 
+| --- | --- | --- | --- |
 
+----------------------
 ### Deployed link
 
 [Click here to play!](https://www.example.com)

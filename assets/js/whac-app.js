@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function() {
+    startButton.addEventListener('click', startGame);
+})
+
 const holes = document.getElementsByClassName('hole');
 const mauls = document.getElementsByClassName('maul');
 const scoreDisplay = document.getElementById('whac-score');
@@ -55,15 +59,12 @@ function startGame() {
     }, 1000);
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    startButton.addEventListener('click', startGame);
-})
 
-function whackMaul(e){
-    score++;
-    this.style.backgroundImage = 'url()';
-    setTimeout(() => {
-        this.style.backgroundImage = 'url()';
-    }, 800);
-}
-mauls.forEach(maul => maul.addEventListener('click', whackMaul))
+// function whackMaul(e){
+//     score++;
+//     this.style.backgroundImage = 'url()';
+//     setTimeout(() => {
+//         this.style.backgroundImage = 'url()';
+//     }, 800);
+// }
+// mauls.forEach(maul => maul.addEventListener('click', whackMaul))

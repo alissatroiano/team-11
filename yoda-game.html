@@ -48,19 +48,18 @@
 
 
 
-
-    <p>What is Yoda Saying</p>
-    <p>rearrange the words to show what Yoda might be saying in the picture</p>
+<section class="yoda-game container-fluid" id="yoda-game">
+    <p class="mt-3">What is Yoda Saying</p>
+    <p class="yoda-p">Rearrange the words to show what Yoda might be saying in the picture</p>
     
-    <section class="yoda-game" id="yoda-game">
-        <div class="row">
-            <div class="col-6 " id="yoda-pic-1"></div>
+        <div class="row align-items-center d-flex flex-wrap">
+            <div class="col-md-6 " id="yoda-pic-1"></div>
             
-            <div class="col-4 flex-column-reverse">  
+            <div class="col-md-6 flex-column-reverse">  
                 <div id="yoda-words-wrong"></div>
                 <div>
-                <input id="answer"  type="text">
-                <button id="submit">Submit</button>
+                <input id="answer" class="mb-3"  type="text">
+                <button id="submit" class="yoda-submit">Submit</button>
                 </div>
             </div>
             
@@ -70,13 +69,39 @@
 
 <style>
 
-    .yoda-game {
+    /* .yoda-game {
         display: flex;  
+    } */
+
+    .yoda-game {
+        max-width: 51rem;
+        border: 1px solid #252525;
+        border-radius: 35px;
+        background: linear-gradient(225deg, #ffffff, #EFEFEF);
+        box-shadow: 5px 8px 28px #666666, 5px 2px 28px #ffffff;
+        margin: 4px;
+        text-align: center;
+        
     }
 
     .yoda-wrong-words {
         margin: 0 1rem 0 1rem;
     }
+
+    .yoda-img {
+        height: 18rem;
+    }
+
+    #yoda-words-wrong {
+        overflow-wrap: anywhere;
+        padding: 1rem 0 1rem 0
+    }
+    .yoda-submit {
+        border-radius: 10px;
+    }
+
+
+
 
 </style>
 
@@ -84,30 +109,25 @@
 
     // What would Yoda Say Game
 
+    const yodaWords = 'Doing great young padawan, you are!'
+
     
-
     var img = document.createElement("img");
+    img.setAttribute('class', 'yoda-img')
 
-    img.src = "assets/images/yoda-eyes-close.gif";
+    img.src = "assets/images/yoda-thumb-up.png";
 
     var src = document.getElementById("yoda-pic-1");
 
     src.appendChild(img);
-
-
-
-    const yodaWords = 'test you are very nice'
-
-
-
-    console.log(yodaWords)
+    
 
     var words = yodaWords.split(' ');
-    console.log(words)
+    // console.log(words)
 
     random = words.sort( () => Math.floor(Math.random() * Math.floor(1)) - 1)
 
-    console.log(random)
+    // console.log(random)
 
     for (let i = 0; i< random.length; i++) {
         let newWord = document.createElement('span');
@@ -117,38 +137,15 @@
     }
 
     
-
-    // let button = document.querySelector("#submit")
-    // button.addEventListener("click", console.log("test"))
-    console.log(typeof(yodaWords))
-    
     let button = document.querySelector("#submit");
     button.addEventListener("click", () => {
-    let answer = document.querySelector("#answer");
-    let convAnswer = JSON.stringify(answer);
-    if (convAnswer === yodaWords) {
-        alert("test correct answer  ");
+    let answer = document.getElementById("answer").value;
+    console.log(answer);
+    if (answer === yodaWords) {
+        alert("CORRECT! Well done");
 
-    } else alert("Wrong answer");
+    } else alert("Wrong answer, try again");
 });
-
-console.log(typeof(answer)) 
-
-
-//     function checkAnswer(e){
-//         let answer = document.getElementById('answer')
-
-//         if (answer === yodaWords) {
-//             alert('Congratulations! You are correct')
-        
-//         }else {
-//             alert('WRONG! try again ')
-//         }
-// }   
-
-
-
-
 
 </script>
 

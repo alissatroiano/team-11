@@ -1,12 +1,15 @@
 # DeathScape
-### Use your Star Wars knowledge to escape the Death Star!
+
+### Use your Star Wars knowledge to escape the Death Star! In this star wars themed escape room game, you must find the missing parts of the key to unlock the sealed door and help free the others. Find the hidden mini games, complete them, lead the others to safety. Can you escape from the falling ship?
+
 ### Deployed link
+[Click here to play!](https://www.example.com)
 
 ## TABLE OF CONTENTS
 | Section |
 | --- |
 | [Project description, link, etc.](#deathscape) |
-| [Controls and Game Rules](#controls-&-game-rules) |
+| [Controls and Game Rules](#controls-and-game-rules) |
 | [Typography](#typography) |
 | [Features](#features) |
 | [UX / UI](#uxui-section) |
@@ -16,11 +19,7 @@
 | [Citation of sources](#citation-of-sources) |
 | [Future Features](#future-features) |
 
-
-## CONTROLS & GAME RULES
-* 
-* 
-* 
+## CONTROLS AND GAME RULES
 
 ## TYPOGRAPHY
 - Ubuntu is the font used for the body with sans serif used as a fallback font.
@@ -101,17 +100,3 @@ Then follow the steps:
 ### Content used in website: 
 
 ## FUTURE FEATURES
-
-----------------------
-### Deployed link
-
-[Click here to play!](https://www.example.com)
-
-(If the game is not browser based, this section should explain to users how to setup/install/run the game. This should be easy for the judges to follow!)
-
-## Credits
-
-* [Be sure to credit any assets that are not yours](https://www.example.com)
-* [Member 1 Linkedin](https://www.linkedin.com)
-* [Member 2 Linkedin](https://www.linkedin.com)
-* [etc. etc.](https://www.example.com)

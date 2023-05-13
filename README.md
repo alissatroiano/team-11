@@ -16,7 +16,5 @@
 
 ## Credits
 
-* [Be sure to credit any assets that are not yours](https://www.example.com)
-* [Member 1 Linkedin](https://www.linkedin.com)
-* [Member 2 Linkedin](https://www.linkedin.com)
-* [etc. etc.](https://www.example.com)
+* [Hipsthetic] (https://www.hipsthetic.com/top-10-free-star-wars-vector-icon-sets/)
+* [Shutterstock]()

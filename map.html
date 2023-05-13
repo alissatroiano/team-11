@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"  "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Load Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <!-- Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+
+ 
+<style type="text/css">
+/* Copyrighted by PayneLess Designs 5 August 2010 to Present | All Rights Reserved */
+* { margin: 0; padding: 0; border: 0; }
+/* START Image Map USA Styling */
+div#map-wrap {
+min-height: 100vh;
+background-size: contain;
+background-attachment: fixed;
+margin: 0 auto;
+/*margin-top: 3%;*/
+background: url('assets/images/game.jpg') no-repeat center center;
+}
+ 
+div#map-wrap img#map {
+width: 1024px;
+height: 633px;
+}
+ 
+p {
+width: 1024px;
+margin: 1% auto;
+text-align: center;
+}
+/* END Image Map USA Styling */
+ 
+h1, h3 { text-align: center; }
+</style>
+</head>
+<body><div><a name="top"></a></div>
+<h1>Image Map as Background Image While Retaining Clickable Areas</h1>
+<h3>Client Side Image Map</h3>
+<div id="logo">
+    <a href="http://PayneLessDesigns.com/" title="Back to Home Page">
+ 
+<p>This image map was made using the rectangular tool where only the name of the state is used to produce the clickable area. Anywhere off these areas will produce a clickable link back to home page. The original image map is being used as a background image with a clear image map over it which retains the clickable areas. You must have a good graphics editor which allows you to set a copy of your image map to full transparency. Be sure to save as a PNG/GIF image. May have to tweak to re-align the clickable areas..</p>
+<p>Clicking on the state names will open new tab to Wikipedia for that state.</p>
+ 
+<div id="map-wrap">
+    <img src="assets/images/game.jpg" alt="Back to Home Page" class="img-fluid"
+    style="min-height:100vh; overflow: hidden; background-size: contain; background-repeat: no-repeat; background-position: center;" usemap="#hangman"></a>
+</div>
+
+<map name="hangman">
+ 
+<area shape="rect" coords="727,42,835,60" href="http://en.wikipedia.org/wiki/New_hampshire"alt="New Hampshire" title="New Hampshire" onmouseover="window.status='Maine'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="733,96,832,114" href="http://en.wikipedia.org/wiki/Massachusetts"alt="Massachusetts" title="Massachusetts" onmouseover="window.status='Massachusetts'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="776,70,833,88" href="http://en.wikipedia.org/wiki/Vermont"alt="Vermont" title="Vermont" onmouseover="window.status='Vermont'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="899,98,953,115" href="http://en.wikipedia.org/wiki/Maine"alt="Maine" title="Maine" onmouseover="window.status='Maine'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="924,210,1011,228" href="http://en.wikipedia.org/wiki/Rhode_island"alt="Rhode Island" title="Rhode Island" onmouseover="window.status='Rhode Island'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="790,186,857,201" href="http://en.wikipedia.org/wiki/New_york"alt="New York" title="New York" onmouseover="window.status='New York'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="761,230,847,247" href="http://en.wikipedia.org/wiki/Pennsylvania"alt="Pennsylvania" title="Pennsylvania" onmouseover="window.status='Pennsylvania'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="932,238,1010,254" href="http://en.wikipedia.org/wiki/Connecticut"alt="Connecticut" title="Connecticut" onmouseover="window.status='Connecticut'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="934,263,1013,282" href="http://en.wikipedia.org/wiki/New_jersey"alt="New Jersey" title="New Jersey" onmouseover="window.status='New Jersey'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="949,290,1010,307" href="http://en.wikipedia.org/wiki/Delaware"alt="Delaware" title="Delaware" onmouseover="window.status='Delaware'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="950,315,1012,335" href="http://en.wikipedia.org/wiki/Maryland"alt="Maryland" title="Maryland" onmouseover="window.status='Maryland'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="933,344,1011,359" href="http://en.wikipedia.org/wiki/Washington,_D.C."alt="Washington D.C." title="Washington D.C." onmouseover="window.status='Washington D.C.'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="928,364,1010,385" href="http://en.wikipedia.org/wiki/West_virginia"alt="West Virginia" title="West Virginia" onmouseover="window.status='West Virginia'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="777,316,828,334" href="http://en.wikipedia.org/wiki/Virginia"alt="Virginia" title="Virginia" onmouseover="window.status='Virginia'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="748,358,843,373" href="http://en.wikipedia.org/wiki/North_carolina"alt="North Carolina" title="North Carolina" onmouseover="window.status='North Carolina'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="752,386,810,416" href="http://en.wikipedia.org/wiki/South_carolina"alt="South Carolina" title="South Carolina" onmouseover="window.status='South Carolina'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="711,433,765,450" href="http://en.wikipedia.org/wiki/Georgia_(U.S._state)"alt="Georgia" title="Georgia" onmouseover="window.status='Georgia'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="764,544,814,561" href="http://en.wikipedia.org/wiki/Florida"alt="Florida" title="Florida" onmouseover="window.status='Florida'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="642,424,699,440" href="http://en.wikipedia.org/wiki/Alabama"alt="Alabama" title="Alabama" onmouseover="window.status='Alabama'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="579,439,651,457" href="http://en.wikipedia.org/wiki/Mississippi"alt="Mississippi" title="Mississippi" onmouseover="window.status='Mississippi'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="545,496,608,511" href="http://en.wikipedia.org/wiki/Louisiana"alt="Louisiana" title="Louisiana" onmouseover="window.status='Louisiana'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="418,473,458,489" href="http://en.wikipedia.org/wiki/Texas"alt="Texas" title="Texas" onmouseover="window.status='Texas'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="625,367,699,384" href="http://en.wikipedia.org/wiki/Tennessee"alt="Tennessee" title="Tennessee" onmouseover="window.status='Tennessee'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="654,330,717,348" href="http://en.wikipedia.org/wiki/Kentucky"alt="Kentucky" title="Kentucky" onmouseover="window.status='Kentucky'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="705,256,737,274" href="http://en.wikipedia.org/wiki/Ohio"alt="Ohio" title="Ohio" onmouseover="window.status='Ohio'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="638,274,689,288" href="http://en.wikipedia.org/wiki/Indiana"alt="Indiana" title="Indiana" onmouseover="window.status='Indiana'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="655,194,714,213" href="http://en.wikipedia.org/wiki/Michigan"alt="Michigan" title="Michigan" onmouseover="window.status='Michigan'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="591,275,633,289" href="http://en.wikipedia.org/wiki/Illinois"alt="Illinois" title="Illinois" onmouseover="window.status='Illinois'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="556,161,624,177" href="http://en.wikipedia.org/wiki/Wisconsin"alt="Wisconsin" title="Wisconsin" onmouseover="window.status='Wisconsin'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="484,135,553,151" href="http://en.wikipedia.org/wiki/Minnesota"alt="Minnesota" title="Minnesota" onmouseover="window.status='Minnesota'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="519,234,553,250" href="http://en.wikipedia.org/wiki/Iowa"alt="Iowa" title="Iowa" onmouseover="window.status='Iowa'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="527,309,585,327" href="http://en.wikipedia.org/wiki/Missouri"alt="Missouri" title="Missouri" onmouseover="window.status='Missouri'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="529,387,591,402" href="http://en.wikipedia.org/wiki/Arkansas"alt="Arkansas" title="Arkansas" onmouseover="window.status='Arkansas'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="437,377,503,393" href="http://en.wikipedia.org/wiki/Oklahoma"alt="Oklahoma" title="Oklahoma" onmouseover="window.status='Oklahoma'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="420,312,472,329" href="http://en.wikipedia.org/wiki/Kansas"alt="Kansas" title="Kansas" onmouseover="window.status='Kansas'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="403,237,466,259" href="http://en.wikipedia.org/wiki/Nebraska"alt="Nebraska" title="Nebraska" onmouseover="window.status='Nebraska'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="385,176,472,193" href="http://en.wikipedia.org/wiki/South_dakota"alt="South Dakota" title="South Dakota" onmouseover="window.status='South Dakota'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="380,107,466,127" href="http://en.wikipedia.org/wiki/North_dakota"alt="North Dakota" title="North Dakota" onmouseover="window.status='North Dakota'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="255,105,312,122" href="http://en.wikipedia.org/wiki/Montana"alt="Montana" title="Montana" onmouseover="window.status='Montana'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="269,202,335,221" href="http://en.wikipedia.org/wiki/Wyoming"alt="Wyoming" title="Wyoming" onmouseover="window.status='Wyoming'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="298,293,356,313" href="http://en.wikipedia.org/wiki/Colorado"alt="Colorado" title="Colorado" onmouseover="window.status='Colorado'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="272,395,352,416" href="http://en.wikipedia.org/wiki/New_mexico"alt="New Mexico" title="New Mexico" onmouseover="window.status='New Mexico'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="175,382,231,401" href="http://en.wikipedia.org/wiki/Arizona"alt="Arizona" title="Arizona" onmouseover="window.status='Arizona'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="203,269,237,289" href="http://en.wikipedia.org/wiki/Utah"alt="Utah" title="Utah" onmouseover="window.status='Utah'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="176,172,215,190" href="http://en.wikipedia.org/wiki/Idaho"alt="Idaho" title="Idaho" onmouseover="window.status='Idaho'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="79,59,159,79" href="http://en.wikipedia.org/wiki/Washington_(U.S._state)"alt="Washington" title="Washington" onmouseover="window.status='Washington'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="69,140,121,158" href="http://en.wikipedia.org/wiki/Oregon"alt="Oregon" title="Oregon" onmouseover="window.status='Oregon'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="104,246,159,267" href="http://en.wikipedia.org/wiki/Nevada"alt="Nevada" title="Nevada" onmouseover="window.status='Nevada'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="47,316,110,334" href="http://en.wikipedia.org/wiki/California"alt="California" title="California" onmouseover="window.status='California'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="98,521,140,541" href="http://en.wikipedia.org/wiki/Alaska"alt="Alaska" title="Alaska" onmouseover="window.status='Alaska'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="rect" coords="259,578,306,601" href="http://en.wikipedia.org/wiki/Hawaii"alt="Hawaii" title="Hawaii" onmouseover="window.status='Hawaii'; return true" onmouseout="window.status=''; return true" onclick="window.open (this.href, ''); return false">
+ 
+<area shape="default" href="http://PayneLessDesigns.com/" alt="Default URL" title="Default URL">
+</map>
+</div>
+<!-- End of Client Side Image Map -->
+</body></html>
+ 

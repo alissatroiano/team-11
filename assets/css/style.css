@@ -27,12 +27,14 @@ body {
 }
 
 /* Game page */
-#game {
+section#game {
+  max-width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background: url("../images/starwars.jpg") no-repeat center center;
-  /* background-color: black; */
-  position: relative;
+  background: url("../images/game.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .door-light {

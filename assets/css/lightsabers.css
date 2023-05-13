@@ -31,6 +31,15 @@ body {
     padding: 0;
 }
 
+#color_selector ul ~ p {
+    overflow: hidden;
+    max-height: 1px;
+    margin:0;
+    -webkit-transition: max-height .8s;
+    -moz-transition: max-height .8s;
+    transition: max-height .8s;
+}
+
 #color_selector li {
     display: inline;
 }
@@ -85,6 +94,28 @@ body {
     font-family: var(--main-font);
     font-size: 1rem;
 }
+
+#color_selector ul + p {
+    max-height: auto;
+}
+.copy {
+    position: absolute;
+    width: 175px;
+    top: 110%; left: 0;
+    background: #333;
+    padding: 10px 20px;
+    color: #bbb;
+}
+.copy a {
+    color: #eee;
+    text-decoration: underline;
+}
+
+
+/*
+ * == lightsaber Styles
+ */
+ 
 
 #lightsaber {
     width: 50px;

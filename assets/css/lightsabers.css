@@ -19,10 +19,11 @@ body {
 
 #color_selector {
     width: 350px;
+    margin: 0 auto;
     position: fixed;
     height: auto;
     padding: 10px 20px;
-    top: 20;
+    top: 10;
     right: 5%;
     color: #fafafa;
 }
@@ -548,7 +549,6 @@ p.subtitle {
 
     #color_selector {
         margin: 1em auto;
-        width: 80%;
         right: 0;
     }
 

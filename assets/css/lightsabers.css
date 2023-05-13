@@ -2,39 +2,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 
 :root {
-  --title: "star wars", serif;
-  --main-font: "share tech mono", serif;
+    --title: "star wars", serif;
+    --main-font: "share tech mono", serif;
 }
 
 body {
     background-color: #222233;
-				background-image: -webkit-radial-gradient(center, circle cover, transparent 0%, #000 100%);
-				background-image: -moz-radial-gradient(center, circle cover, transparent 0%, #000 100%);
-				background-image: radial-gradient(center, ellipse cover, transparent 0%, #000 100%);
-				-webkit-transition: background-color .8s;
-				-moz-transition: background-color .8s;
-				transition: background-color .8s;
-			}
+    background-image: -webkit-radial-gradient(center, circle cover, transparent 0%, #000 100%);
+    background-image: -moz-radial-gradient(center, circle cover, transparent 0%, #000 100%);
+    background-image: radial-gradient(center, ellipse cover, transparent 0%, #000 100%);
+    -webkit-transition: background-color .8s;
+    -moz-transition: background-color .8s;
+    transition: background-color .8s;
+}
 
 
 #color_selector {
     width: 350px;
-    position: absolute;
+    position: fixed;
     height: auto;
     padding: 10px 20px;
-    top: 0;
+    top: 20;
     right: 5%;
     color: #fafafa;
+}
+
+h1.title {
+    color: #fafafa;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--title);
+}
+
+p.subtitle {
+    font-family: var(--main-font);
+    text-align: center;
+    color: rgb(200, 200, 200);
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 #color_selector ul {
     padding: 0;
 }
 
-#color_selector ul ~ p {
+#color_selector ul~p {
     overflow: hidden;
     max-height: 1px;
-    margin:0;
+    margin: 0;
     -webkit-transition: max-height .8s;
     -moz-transition: max-height .8s;
     transition: max-height .8s;
@@ -95,17 +113,20 @@ body {
     font-size: 1rem;
 }
 
-#color_selector ul + p {
+#color_selector ul+p {
     max-height: auto;
 }
+
 .copy {
     position: absolute;
     width: 175px;
-    top: 110%; left: 0;
+    top: 110%;
+    left: 0;
     background: #333;
     padding: 10px 20px;
     color: #bbb;
 }
+
 .copy a {
     color: #eee;
     text-decoration: underline;
@@ -115,7 +136,7 @@ body {
 /*
  * == lightsaber Styles
  */
- 
+
 
 #lightsaber {
     width: 50px;

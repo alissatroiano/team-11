@@ -7,10 +7,9 @@
     <!--Load Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <!-- Bootstrap CDN-->
     <link
@@ -22,11 +21,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Document</title>
-    <!-- Site favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
   </head>
 
-  <body onload="onloadFunction()">
+  <body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Death Scape</a>
@@ -55,44 +52,13 @@
     </nav>
 
     <section class="game" id="game">
+    
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <div class="locked-door-light locked-door-light-1">
-              <i class="fa-solid fa-lock"></i>
-            </div>
-            <div class="locked-door-light locked-door-light-2">
-              <i class="fa-solid fa-lock"></i>
-            </div>
-            <div class="locked-door-light locked-door-light-3">
-              <i class="fa-solid fa-lock"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 redirect-to-play-game-header">
-            <a
-              href="yoda-game.html"
-              role="button"
-              class="redirect-to-play-game-image-btn redirect-to-play-game-image-btn-1"
-              id="redirect-to-play-game-image-btn-1"
-            ></a>
-
-            <a
-              href="whac-a-maul.html"
-              role="button"
-              class="redirect-to-play-game-image-btn redirect-to-play-game-image-btn-2"
-              id="redirect-to-play-game-image-btn-2"
-            ></a>
-            <a
-              href="#"
-              role="button"
-              class="redirect-to-play-game-image-btn redirect-to-play-game-image-btn-3"
-              id="redirect-to-play-game-image-btn-3"
-            ></a>
+            <div class="door-light door-light-1"></div>
+            <div class="door-light door-light-2"></div>
+            <div class="door-light door-light-3"></div>
           </div>
         </div>
       </div>
@@ -104,6 +70,7 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/js/game.js"></script>
   </body>
 </html>
+
+

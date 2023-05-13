@@ -201,13 +201,7 @@ body {
   }
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 .btn-image-header {
-=======
-.redirect-to-play-game-header {
->>>>>>> c884995 (Improved the readability of classes names in game.html page)
   position: relative;
 }
 
@@ -222,6 +216,7 @@ body {
   background-position: center;
   padding: 20px;
   border-radius: 50%;
+  position: absolute;
 }
 
 .redirect-to-play-game-image-btn-1 {
@@ -231,10 +226,7 @@ body {
       rgba(117, 26, 19, 0.73)
     ),
     url("/assets/images/jedy-order-btn.jpg");
-  position: absolute;
-  top: 350px;
-  right: 18%;
-  opacity: 0;
+  opacity: 0.2;
 }
 
 .redirect-to-play-game-image-btn-2 {
@@ -244,10 +236,7 @@ body {
       rgba(19, 65, 117, 0.73)
     ),
     url("/assets/images/new-republic-btn.jpg");
-  position: absolute;
-  top: 20px;
-  left: 16%;
-  opacity: 0;
+  opacity: 0.2;
 }
 .redirect-to-play-game-image-btn-3 {
   background-image: linear-gradient(
@@ -256,11 +245,7 @@ body {
       rgba(50, 117, 19, 0.73)
     ),
     url("/assets/images/galactic-senate-btn.jpg");
-  position: absolute;
-  top: 200px;
-  left: 48%;
-  opacity: 0;
+  opacity: 0.2;
 }
 
->>>>>>> 1fcbf12 (Added mini game image buttons)
 /* End Game page */

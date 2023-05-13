@@ -6,7 +6,7 @@ const onloadFunction = () => {
   ];
 
   for (let i = 1; i <= imageIDs.length; i++) {
-    //First get the image height and width in a let
+    // First get the image height and width in a let
     let element = document.getElementById(imageIDs[i - 1]);
     let positionInfo = element.getBoundingClientRect();
     let imgHeight = positionInfo.height;

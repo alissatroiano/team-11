@@ -7,9 +7,10 @@
     <!--Load Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <!-- Bootstrap CDN-->
     <link
@@ -57,9 +58,15 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <div class="locked-door-light locked-door-light-1"></div>
-            <div class="locked-door-light locked-door-light-2"></div>
-            <div class="locked-door-light locked-door-light-3"></div>
+            <div class="locked-door-light locked-door-light-1">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="locked-door-light locked-door-light-2">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="locked-door-light locked-door-light-3">
+              <i class="fa-solid fa-lock"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -67,21 +74,25 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 redirect-to-play-game-header">
-            <button
-              type="button"
+            <a
+              href="yoda-game.html"
+              role="button"
               class="redirect-to-play-game-image-btn redirect-to-play-game-image-btn-1"
               id="redirect-to-play-game-image-btn-1"
-            ></button>
-            <button
-              type="button"
+            ></a>
+
+            <a
+              href="whac-a-maul.html"
+              role="button"
               class="redirect-to-play-game-image-btn redirect-to-play-game-image-btn-2"
               id="redirect-to-play-game-image-btn-2"
-            ></button>
-            <button
-              type="button"
+            ></a>
+            <a
+              href="#"
+              role="button"
               class="redirect-to-play-game-image-btn redirect-to-play-game-image-btn-3"
               id="redirect-to-play-game-image-btn-3"
-            ></button>
+            ></a>
           </div>
         </div>
       </div>

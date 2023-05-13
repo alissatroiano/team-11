@@ -110,7 +110,7 @@ body {
 }
 
 .locked-door-light {
-  background-color: var(--red-color);
+  /* background-color: var(--red-color); */
   padding: 11px;
   border-radius: 50%;
 }

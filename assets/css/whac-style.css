@@ -31,7 +31,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url(../images/tatooine-bkg.webp);
+    background-image: url(../images/tatooine.webp);
     overflow: hidden;
 }
 
@@ -92,7 +92,7 @@ body {
 }
 
 .maul {
-    background-image: url(../images/maul.webp);
+    background-image: url(../images/maul-cartoon.webp);
     position: absolute;    
     display: none;
     left: -8px;
@@ -100,11 +100,11 @@ body {
     height: 100%;
     transition: 0.4s;
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 60%;
     background-position: bottom;
 }
 
 .hole.up .maul {
     display: block;
-    top: -12px;
+    top: 5px;
 }

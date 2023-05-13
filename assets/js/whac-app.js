@@ -1,9 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
     startButton.addEventListener('click', startGame);
 })
 
 const holes = document.getElementsByClassName('hole');
-const mauls = document.getElementsByClassName('maul');
+const mauls = document.querySelectorAll('.maul');
 const scoreDisplay = document.getElementById('whac-score');
 const timer = document.getElementById('whac-timer');
 const startButton = document.getElementById('whac-start-btn');
@@ -60,11 +60,14 @@ function startGame() {
 }
 
 
-// function whackMaul(e){
-//     score++;
-//     this.style.backgroundImage = 'url()';
-//     setTimeout(() => {
-//         this.style.backgroundImage = 'url()';
-//     }, 800);
-// }
-// mauls.forEach(maul => maul.addEventListener('click', whackMaul))
+function whackMaul(e){
+    score++;
+    this.style.backgroundImage = 'url(../images/maul-cartoon.webp)';
+    this.style.pointerEvents = 'none';
+    setTimeout(() => {
+        this.style.backgroundImage = 'url(../images/maul-cartoon.webp)';
+        this.style.pointerEvents = 'all';
+    }, 800);
+    scoreDisplay.textContent = score;
+}
+mauls.forEach(maul => maul.addEventListener('click', whackMaul));

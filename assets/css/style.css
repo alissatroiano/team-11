@@ -26,8 +26,10 @@ body {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .index-body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* index star wars sw scroll */
@@ -97,6 +99,29 @@ body {
   height: 100vh;
 }
 
+@media (max-width:790px) {
+
+  #color_selector,
+  .copy {
+    position: relative;
+    width: auto;
+  }
+
+  #color_selector {
+    margin: 1em auto;
+    width: 80%;
+    right: 0;
+  }
+
+  .copy {
+    padding: 0;
+  }
+
+  #bg {
+    bottom: -59%;
+  }
+}
+
 /* Game page */
 #game {
   height: 100vh;
@@ -118,11 +143,13 @@ body {
   top: 90px;
   left: 38%;
 }
+
 .door-light-2 {
   position: absolute;
   top: 90px;
   left: 46%;
 }
+
 .door-light-3 {
   position: absolute;
   top: 90px;
@@ -133,9 +160,11 @@ body {
   .door-light-1 {
     left: 40%;
   }
+
   .door-light-2 {
     left: 47%;
   }
+
   .door-light-3 {
     left: 54%;
   }
@@ -145,12 +174,15 @@ body {
   .door-light {
     padding: 12px;
   }
+
   .door-light-1 {
     left: 42%;
   }
+
   .door-light-2 {
     left: 47%;
   }
+
   .door-light-3 {
     left: 52%;
   }
@@ -160,9 +192,11 @@ body {
   .door-light-1 {
     left: 44%;
   }
+
   .door-light-2 {
     left: 48%;
   }
+
   .door-light-3 {
     left: 52%;
   }
@@ -172,9 +206,11 @@ body {
   .door-light-1 {
     left: 46%;
   }
+
   .door-light-2 {
     left: 49%;
   }
+
   .door-light-3 {
     left: 52%;
   }
@@ -189,10 +225,12 @@ body {
     top: 130px;
     left: 47%;
   }
+
   .door-light-2 {
     top: 130px;
     left: 49%;
   }
+
   .door-light-3 {
     top: 130px;
     left: 51%;

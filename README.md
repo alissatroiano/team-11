@@ -1,11 +1,12 @@
 # DeathScape
-## Use your Star Wars knowledge to escape the Death Star!
-
+### Use your Star Wars knowledge to escape the Death Star!
+### Deployed link
 
 ## TABLE OF CONTENTS
 | Section |
 | --- |
-| [Project Logo, title and desciption](#deathscape) |
+| [Project description, link, etc.](#deathscape) |
+| [Controls and Game Rules](#controls-&-game-rules) |
 | [Typography](#typography) |
 | [Features](#features) |
 | [UX / UI](#uxui-section) |
@@ -14,9 +15,9 @@
 | [Deployment](#deployment) |
 | [Citation of sources](#citation-of-sources) |
 | [Future Features](#future-features) |
-![image info](./screenshot.png)
 
-## Controls & Game Rules
+
+## CONTROLS & GAME RULES
 * 
 * 
 * 
@@ -94,6 +95,12 @@ Then follow the steps:
 5. Click the green 'Gitpod' button in the top right corner of the repository
 6. This will trigger a new Gitpod workspace to be created from the code in GitHub where you can work locally
 
+## CITATION OF SOURCES
+### Media:  
+
+### Content used in website: 
+
+## FUTURE FEATURES
 
 ----------------------
 ### Deployed link

@@ -49,7 +49,7 @@ body {
   left: 13%;
   right: 13%;
   height: 100%;
-  animation: play-scroll 40s infinite;
+  animation: play-scroll 40s forwards;
 }
 
 .sw-headings {

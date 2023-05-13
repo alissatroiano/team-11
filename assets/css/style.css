@@ -19,6 +19,17 @@ body {
   font-family: var(--main-font);
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.index-body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.index-body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 /* index star wars sw scroll */
 
 .sw-body {
@@ -49,7 +60,7 @@ body {
   left: 13%;
   right: 13%;
   height: 100%;
-  animation: play-scroll 40s forwards;
+  animation: play-scroll 60s forwards;
 }
 
 .sw-headings {

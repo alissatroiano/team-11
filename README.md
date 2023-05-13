@@ -64,8 +64,36 @@
     - I want to feel as though I am playing a star wars themed escape room and not just a generic escape room
 
 ### Wireframes:
-| Website page | screenshot | Website page | screenshot | 
+| Page | screenshot | Page | screenshot | 
 | --- | --- | --- | --- |
+| Home page | ![wireframe - home](assets/images/wireframes-and-testing/home-wireframe.PNG) | Game page | ![wireframe - game](assets/images/wireframes-and-testing/game-wireframe.PNG) |
+| Meet the team page | ![wireframe - team](assets/images/wireframes-and-testing/team-wireframe.PNG) |  |  |
+
+## TESTING
+[Testing can be found here](/testing.md)
+
+## DEPLOYMENT
+The project was developed in Gitpod, committed and push to GitHub through using the terminal section in Gitpod.
+To deploy this page to GitHub pages from its GitHub repository, the following steps were taken:
+1. Log into GitHub
+2. From the list of repositories on the screen, select the relevant repository
+3. From the menu list near the top below the project name, select settings
+4. There will be a nav down the left of the screen. Find pages and select it when found
+5. Select the branch dropdown which will say none and change it to main
+6. Click the save button to the right of it
+
+How to run this project locally:
+1. To clone this project into Gitpod you will need a GitHub account
+2. Use the Chrome browser
+
+Then follow the steps:
+1. Install Gitpod Browser Extensions for Chrome
+2. After installation, restart the browser
+3. Log into Gitpod with your Gitpod account
+4. Navigate to the project GitHub repository
+5. Click the green 'Gitpod' button in the top right corner of the repository
+6. This will trigger a new Gitpod workspace to be created from the code in GitHub where you can work locally
+
 
 ----------------------
 ### Deployed link

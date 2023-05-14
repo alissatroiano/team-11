@@ -1,6 +1,9 @@
 @import url("https://fonts.cdnfonts.com/css/star-wars");
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
-*, ::after, ::before {
+
+*,
+::after,
+::before {
     box-sizing: inherit;
 }
 
@@ -135,18 +138,13 @@ p.subtitle {
     text-decoration: underline;
 }
 
-
-/*
- * == lightsaber Styles
- */
-
-
 #lightsaber {
     width: 50px;
     margin: auto;
     line-height: 0;
     padding: 20px;
     text-align: center;
+    transform: rotate(320deg);
 }
 
 #lightsaber span {

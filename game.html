@@ -27,32 +27,28 @@
   </head>
 
   <body onload="onloadFunction()">
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Death Scape</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">How To Play</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#game">Play</a>
-            </li>
-          </ul>
-        </div>
+          <a class="navbar-brand" href="#">
+              <i class="fas fa-rocket"></i>
+               Death Scape</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="modal" data-bs-target="#howTo">How To Play</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="game.html">Play</a>
+                  </li>
+              </ul>
+          </div>
       </div>
-    </nav>
+  </nav>
+
 
     <section class="game" id="game">
       <div class="container-fluid">
@@ -97,6 +93,32 @@
         </div>
       </div>
     </section>
+
+    <div class="modal fade" id="howTo" tabindex="-1" aria-labelledby="howToLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h1 class="modal-title display-2" id="howToLabel"></h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body container">
+                  <div class="row">
+                      <div class="col-12">
+                          <h2>HOW TO PLAY</h2>
+                      </div>
+                      <div class="col-12">
+                          <ul class="my-0 mx-auto p-3 list-group">
+                              <li>Lorem ipsum dolor sit amet,</li>
+                              <li>Consectetur adipiscing elit</li>
+                              sed do eiusmod tempor incididunt ut labore et dolore magna
+                              aliqua.
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
     <!--Load Bootstrap Scripts-->
     <script

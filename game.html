@@ -29,7 +29,7 @@
   <body onload="onloadFunction()">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <i class="fas fa-rocket"></i>
           Death Scape</a
         >
@@ -67,7 +67,7 @@
               <i class="fa-solid fa-lock yoda-lock-1"></i>
             </div>
             <div class="locked-door-light locked-door-light-2">
-              <i class="fa-solid fa-lock"></i>
+              <i class="fa-solid fa-lock maul-lock-2"></i>
             </div>
             <div class="locked-door-light locked-door-light-3">
               <i class="fa-solid fa-lock"></i>
@@ -104,6 +104,107 @@
                 </div>
               </div>
             </section>
+          </div>
+        </div>
+      </div>
+      <div class="game-container">
+        <div class="whac-a-maul-grid">
+          <div class="game-content whack-a-maul-content">
+            <div class="container-fluid whac-wrapper">
+              <i class="fa fa-times maul-close" aria-hidden="true"></i>
+              <div class="whac-title">
+                <h1>Whac-a-Maul</h1>
+                <p>
+                  Qui-Gon Jinn and Obi-Wan Kenobi need your help...<br />
+                  Darth Maul is back on Tatooine and this time he must be
+                  defeated!<br />
+                  It should take 8 whacks to finish him off...good luck!
+                </p>
+              </div>
+
+              <div class="whac-stats">
+                <div>Score: <span id="whac-score"></span></div>
+                <div class="whac-start">
+                  <button id="whac-start-btn" disabled>Start Game!</button>
+                </div>
+                <div><span id="whac-timer"></span></div>
+              </div>
+
+              <div class="container-fluid whac-game">
+                <div class="row hole-wrapper">
+                  <div class="col-6 col-md-4 hole" id="maul1">
+                    <div class="maul dead"></div>
+                  </div>
+                  <div class="col-6 col-md-4 hole" id="maul2">
+                    <div class="maul dead"></div>
+                  </div>
+                  <div class="col-6 col-md-4 hole" id="maul3">
+                    <div class="maul dead"></div>
+                  </div>
+                  <div class="col-6 col-md-4 hole" id="maul4">
+                    <div class="maul dead"></div>
+                  </div>
+                  <div class="col-6 col-md-4 hole" id="maul5">
+                    <div class="maul dead"></div>
+                  </div>
+                  <div class="col-6 col-md-4 hole" id="maul6">
+                    <div class="maul dead"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modals -->
+            <div>
+              <!-- Win Modal -->
+              <div
+                tabindex="0"
+                class="whac-modal-container"
+                id="whac-win-modal"
+              >
+                <div class="whac-modal-content">
+                  <p>
+                    You defeated Darth Maul! The Force is truly strong in you
+                    young jedi.
+                  </p>
+                  <img
+                    class="whac-saber-image"
+                    src="assets/images/whac-a-sabre.webp"
+                    alt="Blue light saber"
+                  />
+                  <button
+                    type="button"
+                    id="unlock-button"
+                    class="btn btn-info btn-whack-a-maul-end"
+                  >
+                    Release Escape Pod Lock
+                  </button>
+                </div>
+              </div>
+              <!-- Lose Modal -->
+              <div
+                tabindex="0"
+                class="whac-modal-container"
+                id="whac-lose-modal"
+              >
+                <div class="whac-modal-content">
+                  <p>Darth Maul has defeated you!</p>
+                  <img
+                    class="skull-image"
+                    src="assets/images/skull.webp"
+                    alt="Skull and crossbones"
+                  />
+                  <p>
+                    Take a moment to remember that the Force will always be with
+                    you. You just need to believe it. Now, let's try again...
+                  </p>
+                  <button type="button" class="btn btn-dark" id="repeat-button">
+                    Try Again
+                  </button>
+                  <a class="btn btn-dark" href="game.html">Back</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -167,23 +268,20 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body container">
-            <div class="row">
-              <div class="col-12">
-                <h2>HOW TO PLAY</h2>
-              </div>
               <div class="modal-body container">
-
                 <div class="row">
                   <div class="col-12">
-                    <h2>how to play</h2>           
+                    <h2>how to play</h2>
                     <div class="col-12">
-                        <ul class="my-0 mx-auto p-3 list-group">
-                          <li>Click the play button to start the game</li>
-                          <li>Search the ship for mini games</li>
-                          <li>Complete the games to unlock the door</li>
-                          <li>Once all the padlocks above the door have changed colour, the door will open and you can escape</li>              
-                        </ul>
+                      <ul class="my-0 mx-auto p-3 list-group">
+                        <li>Click the play button to start the game</li>
+                        <li>Search the ship for mini games</li>
+                        <li>Complete the games to unlock the door</li>
+                        <li>
+                          Once all the padlocks above the door have changed
+                          colour, the door will open and you can escape
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>

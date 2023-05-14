@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   startButton.disabled = false;
   startButton.addEventListener("click", startGame);
-  
 });
 
 const holes = document.getElementsByClassName("hole");
@@ -60,7 +59,7 @@ function randomiseHole(holes) {
 function maulUp() {
   // Declares a time window for the period the maul stays visible and makes this random for each pop up
   // Sets timeout to the random 'time' period then removes 'up' class and runs maulUp again until timeUp is true
-  const time = Math.floor((Math.random() * 1000) + 700);
+  const time = Math.floor(Math.random() * 1000 + 700);
   const hole = randomiseHole(holes);
   hole.classList.add("up");
   setTimeout(() => {

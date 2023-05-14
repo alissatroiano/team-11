@@ -1,6 +1,6 @@
 # DeathScape
 
-### Use your Star Wars knowledge to escape the Death Star! In this star wars themed escape room game, you must find the missing parts of the key to unlock the sealed door and help free the others. Find the hidden mini games, complete them, lead the others to safety. Can you escape from the falling ship?
+### Use your Star Wars knowledge to escape the Death Star! In this star wars themed escape room game, you must find the hidden mini games and complete them to unlock the sealed door and lead the others to safety. Can you escape from the falling ship?
 
 ### Deployed link
 [Click here to play!](https://www.example.com)

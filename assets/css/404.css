@@ -168,6 +168,7 @@ li a:hover {
     font-size: 1rem;
     margin-top: 50px;
     font-family: var(--main-font);
+
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
     -ms-transition: all 0.3s ease-in;

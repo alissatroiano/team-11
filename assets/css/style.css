@@ -271,6 +271,30 @@ a.btn.btn-lg.btn-secondary {
   z-index: 2;
 }
 
+.whac-a-maul-grid {
+  min-height: 100%;
+  position: relative;
+  z-index: -1;
+  margin-top: 3em;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: transform 600ms ease-in-out, z-index 900ms;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-500%);
+}
+
+.whac-a-maul-grid > div {
+  overflow: hidden;
+}
+
+.whac-a-maul-grid.active {
+  grid-template-rows: 1fr;
+  transition: transform 600ms ease-in-out, z-index 600ms;
+  z-index: 2;
+  transform: translateX(0);
+}
+
 .btn-image-header {
   position: relative;
 }
@@ -353,11 +377,13 @@ a.btn.btn-lg.btn-secondary {
   display: block;
 }
 
-.yoda-lock-change-color {
+.yoda-lock-change-color,
+.maul-lock-change-color {
   color: red;
 }
 
-.yoda-close {
+.yoda-close,
+.maul-close {
   margin-left: 90%;
   margin-top: 1em;
   font-size: 1.5em;
@@ -365,3 +391,149 @@ a.btn.btn-lg.btn-secondary {
   padding: 2px 4px;
 }
 /* End Game page */
+
+/* Whack-a-maul maul whack styles */
+
+.whac-wrapper {
+  box-sizing: border-box;
+  border: 1px solid #252525;
+  border-radius: 35px;
+  background: linear-gradient(225deg, #ffffff, #efefef);
+  box-shadow: -5px 8px 28px #666666, 5px 2px 28px #ffffff;
+  max-height: 600px;
+  max-width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../images/tatooine.webp);
+  overflow: hidden;
+}
+
+.whac-title {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.whac-title h1 {
+  padding: 5px;
+}
+
+.whac-title p {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.whac-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whac-stats div,
+.whac-start button {
+  padding: 5px 20px;
+}
+
+.whac-game {
+  max-width: 600px;
+  max-height: 400px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.hole-wrapper {
+  height: 100%;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.hole {
+  min-height: 125px;
+  min-width: fit-content;
+  position: relative;
+  margin: 30px 0;
+}
+
+.hole:after {
+  content: "";
+  display: block;
+  background-image: url(../images/sand-heap.webp);
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  z-index: 2;
+  bottom: -18px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.maul {
+  background-image: url(../images/maul-cartoon.webp);
+  position: absolute;
+  display: none;
+  left: -8px;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: bottom;
+}
+
+.hole.up .maul {
+  display: block;
+  top: 5px;
+}
+
+/* Modal styles */
+.whac-modal-container {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 200;
+}
+
+.whac-modal-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #524f4f;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 10px;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  min-width: 225px;
+  min-height: 135px;
+}
+
+.whac-modal-content p {
+  color: #efefef;
+  text-align: center;
+}
+
+.whac-modal-content a {
+  margin-top: 10px;
+}
+
+.whac-saber-image {
+  height: 150px;
+  width: auto;
+  padding-bottom: 10px;
+}
+
+.skull-image {
+  height: 50px;
+  width: auto;
+  padding-bottom: 10px;
+}
+
+/* end  */

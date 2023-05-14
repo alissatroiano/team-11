@@ -1,12 +1,15 @@
 @import url("https://fonts.cdnfonts.com/css/star-wars");
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+*, ::after, ::before {
+    box-sizing: inherit;
+}
 
 :root {
     --title: "star wars", serif;
     --main-font: "share tech mono", serif;
 }
 
-body {
+.modal-fullscreen .modal-content {
     background-color: #222233;
     background-image: -webkit-radial-gradient(center, circle cover, transparent 0%, #000 100%);
     background-image: -moz-radial-gradient(center, circle cover, transparent 0%, #000 100%);
@@ -16,9 +19,8 @@ body {
     transition: background-color .8s;
 }
 
-
 #color_selector {
-    max-width: 350px;
+    max-width: 450px;
     margin: 0 auto;
     position: absolute;
     height: auto;
@@ -133,18 +135,13 @@ p.subtitle {
     text-decoration: underline;
 }
 
-
-/*
- * == lightsaber Styles
- */
-
-
 #lightsaber {
     width: 50px;
     margin: auto;
     line-height: 0;
     padding: 20px;
     text-align: center;
+    transform: rotate(320deg);
 }
 
 #lightsaber span {
@@ -563,4 +560,10 @@ p.subtitle {
     #bg {
         bottom: -59%;
     }
+}
+
+a#close {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fafafa;
 }

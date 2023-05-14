@@ -1,5 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/star-wars");
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500');
+
 
 :root {
   --red-color: #d13443;
@@ -40,8 +42,28 @@ a.btn.btn-lg.btn-secondary {
   /* Firefox */
 }
 
-/* index star wars sw scroll */
+i.fas {
+  color: rgb(235, 196, 23);
+}
 
+a.nav-link:hover,
+.navbar li:hover,
+a:hover {
+    color: rgb(235, 196, 23);
+}
+
+/* Navbar */
+.bg-main {
+  background-color: #151517;
+}
+
+.navbar li,
+.navbar-brand {
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+}
+
+/* index star wars sw scroll */
 .sw-body {
   color: #ffbe00;
   font-family: sans-serif;

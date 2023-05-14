@@ -135,18 +135,13 @@ p.subtitle {
     text-decoration: underline;
 }
 
-
-/*
- * == lightsaber Styles
- */
-
-
 #lightsaber {
     width: 50px;
     margin: auto;
     line-height: 0;
     padding: 20px;
     text-align: center;
+    transform: rotate(320deg);
 }
 
 #lightsaber span {

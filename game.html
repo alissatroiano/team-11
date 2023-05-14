@@ -20,6 +20,7 @@
       crossorigin="anonymous"
     />
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/lightsabers.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Game</title>
     <!-- Site favicon -->
@@ -70,7 +71,7 @@
               <i class="fa-solid fa-lock maul-lock-2"></i>
             </div>
             <div class="locked-door-light locked-door-light-3">
-              <i class="fa-solid fa-lock"></i>
+              <i class="fa-solid fa-lock lightsaber-door-light-3"></i>
             </div>
           </div>
         </div>
@@ -88,10 +89,9 @@
                   picture
                 </p>
 
-                <div class="row align-items-center d-flex flex-wrap">
-                  <div class="col-md-6" id="yoda-pic-1"></div>
-
-                  <div class="col-md-6 flex-column-reverse">
+                <div class="row align-items-center d-flex flex-wrap" id="yoda-row">
+                  <div class="col" id="yoda-pic-1"></div>
+                  <div class="col flex-column-reverse">
                     <div id="yoda-words-wrong"></div>
                     <div>
                       <input id="answer" class="mb-3" type="text" />
@@ -208,7 +208,6 @@
           </div>
         </div>
       </div>
-
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 redirect-to-play-game-header">
@@ -221,11 +220,13 @@
               class="redirect-to-play-game-image-btn redirect-to-play-game-image-btn-2"
               id="redirect-to-play-game-image-btn-2"
             ></span>
-
+            <a href="#lightsabers" role="button" data-bs-toggle="modal" data-bs-target="#lightsabers">
             <span
               class="redirect-to-play-game-image-btn redirect-to-play-game-image-btn-3"
               id="redirect-to-play-game-image-btn-3"
             ></span>
+            </a>
+          
             <!-- <a
               href="yoda-game.html"
               role="button"
@@ -249,6 +250,98 @@
         </div>
       </div>
     </section>
+
+    <!--lightsaber game modal-->
+  <div class="modal top fade" id="lightsabers" tabindex="-1" aria-labelledby="saberLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen" id="sabers">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title text-light">Build a Lightsaber</h1>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <p class="subtitle">Greetings, youngling! If you've made it this far, you are ready to use your kyber
+              crystal to build your very own lightsaber! This is no small task. Use the color selector below to guide
+              your decision. <strong>Click on the lightsaber when you're done!</strong></p>
+          </div>
+          <span class="c" id="blue"></span>
+          <span class="c" id="red"></span>
+          <span class="c" id="green"></span>
+          <span class="c" id="purple"></span>
+          <span class="c" id="yellow"></span>
+          <span class="c" id="orange"></span>
+          <span class="c" id="darksaber"></span>
+
+          <div id="color_selector">
+            <ul>
+              <li><a href="#blue" class="blue">Blue</a></li>
+              <li><a href="#red" class="red">Red</a></li>
+              <li><a href="#green" class="green">Green</a></li>
+              <li><a href="#purple" class="purple">Purple</a></li>
+              <li><a href="#yellow" class="yellow">Yellow</a></li>
+              <li><a href="#orange" class="orange">Orange</a></li>
+              <li><a href="#darksaber" class="darksaber"></a></li>
+            </ul>
+
+            <p class="p_blue">Blue lightsabers are said to represent righteousness and bravery, mostly by association
+              with what the Jedi stand for, as well as the user's strong “spiritual alignment” with the crystal.</p>
+            <p class="p_red">Red lightsabers are wielded by Sith Lords, including Darth Vader, Darth Maul, and the Grand
+              Inquisitor </p>
+            <p class="p_green">Green lightsabers are usually often wielded by Jedi Consulars, deep thinkers who studied
+              the inner workings of the Force.</p>
+            <p class="p_purple">Purple lightsabers are less common, but they are often seen as a sign of nobility and
+              wisdom.</p>
+            <p class="p_yellow">Yellow is exclusively used by Jedi Temple guards, either intentionally to distinguish
+              them, or by the crystal choosing who should be a temple guard. </p>
+            <p class="p_orange">Orange lightsabers are associated with ambition, creativity, and resourcefulness. </p>
+
+          </div>
+
+          <div id="lightsaber">
+            <span id="light"></span>
+
+            <span id="generator">
+              <span id="guard">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <a href="game.html">
+                <span id="handlestart">
+                  <span></span>
+                  <span></span>
+                </span>
+                <span id="handle">
+                  <span></span>
+                  <span></span>
+                  <span></span><span></span>
+                  <span></span><span></span>
+                  <span></span><span></span>
+                  <span></span><span></span>
+                  <span class="long"></span>
+                  <span class="long"></span>
+                  <span class="box"></span>
+                </span>
+              </a>
+
+              <span class="wings">
+                <span class="wing wing1"></span>
+                <span class="wing wing2"></span>
+                <span class="wing wing3"></span>
+
+                <span class="light"></span>
+              </span>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
 
     <div
       class="modal fade"
@@ -289,8 +382,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
     <!--Load Bootstrap Scripts-->
     <script

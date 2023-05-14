@@ -269,7 +269,7 @@ a.btn.btn-lg.btn-secondary {
   background-image: linear-gradient(to bottom,
       rgba(245, 246, 252, 0.586),
       rgba(117, 26, 19, 0.73)),
-    url("/assets/images/jedy-order-btn.jpg");
+    url("../images/jedy-order-btn.jpg");
   opacity: 0.1;
 }
 
@@ -277,7 +277,7 @@ a.btn.btn-lg.btn-secondary {
   background-image: linear-gradient(to bottom,
       rgba(245, 246, 252, 0.263),
       rgba(19, 65, 117, 0.73)),
-    url("/assets/images/new-republic-btn.jpg");
+    url("../images/new-republic-btn.jpg");
   opacity: 0.2;
 }
 
@@ -285,7 +285,7 @@ a.btn.btn-lg.btn-secondary {
   background-image: linear-gradient(to bottom,
       rgba(245, 246, 252, 0.263),
       rgba(50, 117, 19, 0.73)),
-    url("/assets/images/galactic-senate-btn.jpg");
+    url("../images/galactic-senate-btn.jpg");
   opacity: 0.2;
 }
 

@@ -9,6 +9,7 @@ const mauls = document.querySelectorAll(".maul");
 const scoreDisplay = document.getElementById("whac-score");
 const timer = document.getElementById("whac-timer");
 const startButton = document.getElementById("whac-start-btn");
+const whacked = document.getElementsByClassName("dead");
 
 let timeUp = false;
 let timeLimit = 15000;
@@ -97,8 +98,8 @@ function whackMaul() {
   // Increases score when maul whacked
   // Removes pointer event so maul can't be whacked twice
   // After timeout reinstates pointer event
-  score++;
   this.style.pointerEvents = "none";
+  score++;
   setTimeout(() => {
     this.style.pointerEvents = "all";
   }, 500);

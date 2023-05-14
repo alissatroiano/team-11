@@ -44,6 +44,11 @@ body {
     padding: 5px;
 }
 
+.whac-title p {
+    font-size: 17px;
+    font-weight: bold;
+}
+
 .whac-stats {
     display: flex;
     justify-content: center;
@@ -142,4 +147,16 @@ body {
 
 .whac-modal-content a {
     margin-top: 10px;
+}
+
+.whac-saber-image {
+    height: 150px;
+    width: auto;
+    padding-bottom: 10px;
+}
+
+.skull-image {
+    height: 50px;
+    width: auto;
+    padding-bottom: 10px;;
 }

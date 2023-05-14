@@ -153,11 +153,13 @@ a.btn.btn-lg.btn-secondary {
   top: 90px;
   left: 38%;
 }
+
 .locked-door-light-2 {
   position: absolute;
   top: 90px;
   left: 46%;
 }
+
 .locked-door-light-3 {
   position: absolute;
   top: 90px;
@@ -168,9 +170,11 @@ a.btn.btn-lg.btn-secondary {
   .locked-door-light-1 {
     left: 40%;
   }
+
   .locked-door-light-2 {
     left: 47%;
   }
+
   .locked-door-light-3 {
     left: 54%;
   }
@@ -180,12 +184,15 @@ a.btn.btn-lg.btn-secondary {
   .locked-door-light {
     padding: 12px;
   }
+
   .locked-door-light-1 {
     left: 42%;
   }
+
   .locked-door-light-2 {
     left: 47%;
   }
+
   .locked-door-light-3 {
     left: 52%;
   }
@@ -195,9 +202,11 @@ a.btn.btn-lg.btn-secondary {
   .locked-door-light-1 {
     left: 44%;
   }
+
   .locked-door-light-2 {
     left: 48%;
   }
+
   .locked-door-light-3 {
     left: 52%;
   }
@@ -207,9 +216,11 @@ a.btn.btn-lg.btn-secondary {
   .locked-door-light-1 {
     left: 46%;
   }
+
   .locked-door-light-2 {
     left: 49%;
   }
+
   .locked-door-light-3 {
     left: 52%;
   }
@@ -224,10 +235,12 @@ a.btn.btn-lg.btn-secondary {
     top: 130px;
     left: 47%;
   }
+
   .locked-door-light-2 {
     top: 130px;
     left: 49%;
   }
+
   .locked-door-light-3 {
     top: 130px;
     left: 51%;
@@ -253,30 +266,25 @@ a.btn.btn-lg.btn-secondary {
 }
 
 .redirect-to-play-game-image-btn-1 {
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(245, 246, 252, 0.586),
-      rgba(117, 26, 19, 0.73)
-    ),
+      rgba(117, 26, 19, 0.73)),
     url("/assets/images/jedy-order-btn.jpg");
   opacity: 0.1;
 }
 
 .redirect-to-play-game-image-btn-2 {
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(245, 246, 252, 0.263),
-      rgba(19, 65, 117, 0.73)
-    ),
+      rgba(19, 65, 117, 0.73)),
     url("/assets/images/new-republic-btn.jpg");
   opacity: 0.2;
 }
+
 .redirect-to-play-game-image-btn-3 {
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(245, 246, 252, 0.263),
-      rgba(50, 117, 19, 0.73)
-    ),
+      rgba(50, 117, 19, 0.73)),
     url("/assets/images/galactic-senate-btn.jpg");
   opacity: 0.2;
 }

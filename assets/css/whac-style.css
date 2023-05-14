@@ -123,7 +123,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #90CE67;
+    background-color: #524f4f;
     margin: 0 auto;
     padding: 15px;
     border-radius: 10px;
@@ -132,5 +132,14 @@ body {
     left: 50%;
     transform: translate(-50%, 0);
     min-width: 225px;
-    height: 135px;
+    min-height: 135px;
+}
+
+.whac-modal-content p {
+    color: #EFEFEF;
+    text-align: center;
+}
+
+.whac-modal-content a {
+    margin-top: 10px;
 }

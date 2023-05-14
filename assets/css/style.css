@@ -78,6 +78,10 @@ a.btn.btn-lg.btn-secondary {
   margin-bottom: 5rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .sw-h1 {
   font-size: 2.5rem;
   text-align: center;
@@ -107,8 +111,25 @@ a.btn.btn-lg.btn-secondary {
   background-size: cover;
   height: 100vh;
   overflow: hidden;
+  animation-name: hero-zoom;
+  animation-duration: 35s;
+  animation-fill-mode: forwards;
 }
 
+.navbar {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+@keyframes hero-zoom {
+  from{
+      transform: scale(1.0);
+  }
+  to{
+      transform: scale(1.1);
+  }
+}
 @media (max-width: 790px) {
   #color_selector,
   .copy {

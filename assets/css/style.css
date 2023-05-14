@@ -133,12 +133,17 @@ body {
 
 
 /* contact page */
+
+.contact-page-bg-image{
+  background:url("../images/space.jpg") no-repeat center center  ;
+
+}
 .team_title{
-  color:black;
+  color:beige;
 }
 /* columns side by side */
 .profile-card {
-  width: 22.3%;
+  width: 33.3%;
   margin: 20px;
   padding: 15px 10px;
 }

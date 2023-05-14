@@ -110,16 +110,17 @@
     // What would Yoda Say Game
 
     const yodaWords = 'Doing great young padawan, you are!'
-
-    
     var img = document.createElement("img");
-    img.setAttribute('class', 'yoda-img')
-
-    img.src = "assets/images/yoda-thumb-up.png";
-
     var src = document.getElementById("yoda-pic-1");
 
-    src.appendChild(img);
+    
+    
+
+        img.setAttribute('class', 'yoda-img');
+        img.src = "assets/images/yoda-thumb-up.png";
+        src.appendChild(img);
+
+    
     
 
     var words = yodaWords.split(' ');

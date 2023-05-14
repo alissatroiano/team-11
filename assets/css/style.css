@@ -153,22 +153,12 @@ a.btn.btn-lg.btn-secondary {
   top: 90px;
   left: 38%;
 }
-<<<<<<< HEAD
-
-.door-light-2 {
-=======
 .locked-door-light-2 {
->>>>>>> 00671c67775d50292015c99bcfe039170ece2bbe
   position: absolute;
   top: 90px;
   left: 46%;
 }
-<<<<<<< HEAD
-
-.door-light-3 {
-=======
 .locked-door-light-3 {
->>>>>>> 00671c67775d50292015c99bcfe039170ece2bbe
   position: absolute;
   top: 90px;
   left: 54%;
@@ -178,19 +168,10 @@ a.btn.btn-lg.btn-secondary {
   .locked-door-light-1 {
     left: 40%;
   }
-<<<<<<< HEAD
-
-  .door-light-2 {
-    left: 47%;
-  }
-
-  .door-light-3 {
-=======
   .locked-door-light-2 {
     left: 47%;
   }
   .locked-door-light-3 {
->>>>>>> 00671c67775d50292015c99bcfe039170ece2bbe
     left: 54%;
   }
 }
@@ -199,18 +180,6 @@ a.btn.btn-lg.btn-secondary {
   .locked-door-light {
     padding: 12px;
   }
-<<<<<<< HEAD
-
-  .door-light-1 {
-    left: 42%;
-  }
-
-  .door-light-2 {
-    left: 47%;
-  }
-
-  .door-light-3 {
-=======
   .locked-door-light-1 {
     left: 42%;
   }
@@ -218,7 +187,6 @@ a.btn.btn-lg.btn-secondary {
     left: 47%;
   }
   .locked-door-light-3 {
->>>>>>> 00671c67775d50292015c99bcfe039170ece2bbe
     left: 52%;
   }
 }
@@ -227,19 +195,10 @@ a.btn.btn-lg.btn-secondary {
   .locked-door-light-1 {
     left: 44%;
   }
-<<<<<<< HEAD
-
-  .door-light-2 {
-    left: 48%;
-  }
-
-  .door-light-3 {
-=======
   .locked-door-light-2 {
     left: 48%;
   }
   .locked-door-light-3 {
->>>>>>> 00671c67775d50292015c99bcfe039170ece2bbe
     left: 52%;
   }
 }
@@ -248,19 +207,10 @@ a.btn.btn-lg.btn-secondary {
   .locked-door-light-1 {
     left: 46%;
   }
-<<<<<<< HEAD
-
-  .door-light-2 {
-    left: 49%;
-  }
-
-  .door-light-3 {
-=======
   .locked-door-light-2 {
     left: 49%;
   }
   .locked-door-light-3 {
->>>>>>> 00671c67775d50292015c99bcfe039170ece2bbe
     left: 52%;
   }
 }
@@ -274,29 +224,16 @@ a.btn.btn-lg.btn-secondary {
     top: 130px;
     left: 47%;
   }
-<<<<<<< HEAD
-
-  .door-light-2 {
-    top: 130px;
-    left: 49%;
-  }
-
-  .door-light-3 {
-=======
   .locked-door-light-2 {
     top: 130px;
     left: 49%;
   }
   .locked-door-light-3 {
->>>>>>> 00671c67775d50292015c99bcfe039170ece2bbe
     top: 130px;
     left: 51%;
   }
 }
 
-<<<<<<< HEAD
-/* End Game page */
-=======
 .btn-image-header {
   position: relative;
 }
@@ -345,4 +282,3 @@ a.btn.btn-lg.btn-secondary {
 }
 
 /* End Game page */
->>>>>>> 00671c67775d50292015c99bcfe039170ece2bbe

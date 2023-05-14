@@ -21,6 +21,10 @@ body {
   font-family: var(--main-font);
 }
 
+a.btn.btn-lg.btn-secondary {
+  z-index: 1000;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .index-body::-webkit-scrollbar {
   display: none;
@@ -56,6 +60,7 @@ body {
   right: 0;
   overflow: hidden;
   transform: scaleY(0.9);
+  z-index: -1000;
 }
 
 .sw-credits {
@@ -229,7 +234,7 @@ body {
       rgba(117, 26, 19, 0.73)
     ),
     url("/assets/images/jedy-order-btn.jpg");
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 .redirect-to-play-game-image-btn-2 {

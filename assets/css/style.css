@@ -400,7 +400,7 @@ a.btn.btn-lg.btn-secondary {
   border-radius: 35px;
   background: linear-gradient(225deg, #ffffff, #efefef);
   box-shadow: -5px 8px 28px #666666, 5px 2px 28px #ffffff;
-  max-height: 600px;
+  min-height: 600px;
   max-width: 1000px;
   position: absolute;
   top: 50%;

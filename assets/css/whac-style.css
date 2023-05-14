@@ -105,3 +105,32 @@ body {
     display: block;
     top: 5px;
 }
+
+/* Modal styles */
+.whac-modal-container {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 200;
+}
+
+.whac-modal-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #90CE67;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    min-width: 225px;
+    height: 135px;
+}

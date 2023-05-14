@@ -15,6 +15,34 @@ let timeLimit = 15000;
 let score = 0;
 let countdown;
 
+// Modal variables
+const winModal = document.getElementById("whac-win-modal");
+const loseModal = document.getElementById("whac-lose-modal");
+const unlockBtn = document.getElementById("unlock-button");
+const repeatBtn = document.getElementById("repeat-button");
+
+// Modal Functions
+function displayWinModal() {
+  winModal.style.display = "block";
+  winModal.focus();
+  unlockBtn.addEventListener("click", maulSuccess);
+}
+
+function displayLoseModal() {
+  loseModal.style.display = "block";
+  loseModal.focus();
+  repeatBtn.addEventListener("click", retryGame);
+}
+
+function maulSuccess() {
+  window.location.href = "game.html";
+}
+
+function retryGame() {
+  loseModal.style.display = "none";
+  startButton.disabled = false;
+}
+
 function randomiseHole(holes) {
   let previousHole = [];
   // Picks a hole at random, checks this was not the same as the last hole to be picked and returns the random hole
@@ -48,6 +76,7 @@ function startGame() {
   timeUp = false;
   score = 0;
   maulUp();
+  mauls.forEach((maul) => maul.addEventListener("click", whackMaul));
   setTimeout(function () {
     timeUp = true;
   }, timeLimit);
@@ -59,7 +88,7 @@ function startGame() {
       countdown = 0;
       clearInterval(startTimer);
       timer.textContent = "Time is up!";
-      // endGame();
+      endGame(scoreDisplay);
     }
   }, 1000);
 }
@@ -74,6 +103,16 @@ function whackMaul() {
     this.style.pointerEvents = "all";
   }, 500);
   scoreDisplay.textContent = score;
+  return scoreDisplay;
 }
 
-mauls.forEach((maul) => maul.addEventListener("click", whackMaul));
+function endGame(scoreDisplay) {
+  console.log(scoreDisplay);
+  let totalScore = parseInt(document.getElementById("whac-score").innerHTML);
+  console.log(totalScore);
+  if (totalScore >= 8) {
+    displayWinModal();
+  } else {
+    displayLoseModal();
+  }
+}

@@ -64,7 +64,7 @@
         <div class="row">
           <div class="col-12">
             <div class="locked-door-light locked-door-light-1">
-              <i class="fa-solid fa-lock"></i>
+              <i class="fa-solid fa-lock yoda-lock-1"></i>
             </div>
             <div class="locked-door-light locked-door-light-2">
               <i class="fa-solid fa-lock"></i>
@@ -81,6 +81,7 @@
           <div class="game-content yoda-words-game-grid">
             <section class="yoda-game container-fluid" id="yoda-game">
               <div>
+                <i class="fa fa-times yoda-close" aria-hidden="true"></i>
                 <p class="mt-3">What is Yoda Saying</p>
                 <p class="yoda-p">
                   Rearrange the words to show what Yoda might be saying in the
@@ -95,6 +96,9 @@
                     <div>
                       <input id="answer" class="mb-3" type="text" />
                       <button id="submit" class="yoda-submit">Submit</button>
+                      <button class="yoda-submit button-end-yoda-game">
+                        Finish Game
+                      </button>
                     </div>
                   </div>
                 </div>

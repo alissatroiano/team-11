@@ -34,7 +34,9 @@ yodaGameSpan.addEventListener("click", () => {
 // Yoda Game JS
 
 const yodaWords = "Doing great young padawan, you are!";
-
+btnFinishYoda = document.querySelector(".button-end-yoda-game");
+yodaFinishedLock = document.querySelector(".yoda-lock-1");
+yodacloseicon = document.querySelector(".yoda-close");
 var img = document.createElement("img");
 var src = document.getElementById("yoda-pic-1");
 
@@ -58,9 +60,18 @@ button.addEventListener("click", () => {
   let answer = document.getElementById("answer").value;
   console.log(answer);
   if (answer === yodaWords) {
-    alert("CORRECT! Well done");
-    window.location.replace("game.html");
+    alert("Congratulation Young One");
+    btnFinishYoda.classList.toggle("finished");
   } else alert("Wrong answer, try again");
+});
+
+btnFinishYoda.addEventListener("click", () => {
+  yodaFinishedLock.classList.toggle("yoda-lock-change-color");
+  yodaGrid.classList.toggle("active");
+});
+
+yodacloseicon.addEventListener("click", () => {
+  yodaGrid.classList.toggle("active");
 });
 
 // End Yoda Game JS

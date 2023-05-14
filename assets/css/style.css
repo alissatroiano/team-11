@@ -271,10 +271,6 @@ a.btn.btn-lg.btn-secondary {
   z-index: 2;
 }
 
-.yoda-game-span {
-  background-color: red;
-}
-
 .btn-image-header {
   position: relative;
 }
@@ -335,7 +331,7 @@ a.btn.btn-lg.btn-secondary {
 }
 
 .yoda-wrong-words {
-  margin: 0 2rem;
+  margin: 0 2.5rem;
 }
 
 .yoda-img {
@@ -348,5 +344,24 @@ a.btn.btn-lg.btn-secondary {
 }
 .yoda-submit {
   border-radius: 10px;
+}
+
+.button-end-yoda-game {
+  display: none;
+}
+.button-end-yoda-game.finished {
+  display: block;
+}
+
+.yoda-lock-change-color {
+  color: red;
+}
+
+.yoda-close {
+  margin-left: 90%;
+  margin-top: 1em;
+  font-size: 1.5em;
+  border: 2px solid;
+  padding: 2px 4px;
 }
 /* End Game page */

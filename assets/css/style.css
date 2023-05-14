@@ -4,7 +4,8 @@
 
 
 :root {
-  --red-color: #d13443;
+  --danger-color: #d13443;
+  --success-color: #20c997;
 
   --title: "star wars", serif;
   --main-font: "share tech mono", serif;
@@ -164,9 +165,10 @@ a:hover {
 }
 
 .locked-door-light {
-  /* background-color: var(--red-color); */
+  color: var(--danger-color);
   padding: 11px;
   border-radius: 50%;
+  font-size: 170%;
 }
 
 .locked-door-light-1 {
@@ -405,7 +407,7 @@ a:hover {
 
 .yoda-lock-change-color,
 .maul-lock-change-color {
-  color: red;
+  color: var(--success-color);
 }
 
 .yoda-close,

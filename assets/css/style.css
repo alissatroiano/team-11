@@ -24,6 +24,8 @@ body {
 /* Hide scrollbar for Chrome, Safari and Opera */
 .index-body::-webkit-scrollbar {
   display: none;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
@@ -52,7 +54,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  overflow: visible;
+  overflow: hidden;
   transform: scaleY(0.9);
 }
 
@@ -97,6 +99,7 @@ body {
     url("../images/space.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
+  overflow: hidden;
 }
 
 /* Game page */

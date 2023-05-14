@@ -23,15 +23,12 @@
 
 ## TYPOGRAPHY
 - Ubuntu is the font used for the body with sans serif used as a fallback font.
-- The Ubuntu font has been selected as I feel as though it has a similar feel to the font used in the logo, whilst also remaining clear to read.
-- Different font weights have been used for various parts of the website.
-- Most of the content is white text and a dark background
+- The share tech mono font has been selected as I feel as though it has a star wars feel to it
+- Most of the content is white text and a dark background or black with a white background.
 
 ## FEATURES
 - Header 
     - Contains the navigation links to change from page to page.
-- Footer
-    - Contains a sales pitch with a link to the enquire page, as well as the social media accounts of the business.
 - Team page
     - This page shows the team of individuals who collaborated together to make this game
 - Links
@@ -95,7 +92,8 @@ Then follow the steps:
 6. This will trigger a new Gitpod workspace to be created from the code in GitHub where you can work locally
 
 ## CITATION OF SOURCES
-### Media:  
+### Media:
+- [https://imgbin.com/free-png/yoda]
 
 ### Content used in website: 
 

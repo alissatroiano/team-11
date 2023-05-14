@@ -44,6 +44,11 @@ body {
     padding: 5px;
 }
 
+.whac-title p {
+    font-size: 17px;
+    font-weight: bold;
+}
+
 .whac-stats {
     display: flex;
     justify-content: center;
@@ -104,4 +109,54 @@ body {
 .hole.up .maul {
     display: block;
     top: 5px;
+}
+
+/* Modal styles */
+.whac-modal-container {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 200;
+}
+
+.whac-modal-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #524f4f;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    min-width: 225px;
+    min-height: 135px;
+}
+
+.whac-modal-content p {
+    color: #EFEFEF;
+    text-align: center;
+}
+
+.whac-modal-content a {
+    margin-top: 10px;
+}
+
+.whac-saber-image {
+    height: 150px;
+    width: auto;
+    padding-bottom: 10px;
+}
+
+.skull-image {
+    height: 50px;
+    width: auto;
+    padding-bottom: 10px;;
 }

@@ -109,8 +109,7 @@ a.btn.btn-lg.btn-secondary {
   overflow: hidden;
 }
 
-@media (max-width:790px) {
-
+@media (max-width: 790px) {
   #color_selector,
   .copy {
     position: relative;
@@ -246,6 +245,31 @@ a.btn.btn-lg.btn-secondary {
     left: 51%;
   }
 }
+.game-container {
+  position: absolute;
+  inset: 0;
+}
+
+.game-grid {
+  height: 100%;
+  position: relative;
+  z-index: -1;
+  margin-top: 3em;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 600ms ease-in-out, z-index 900ms;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-grid > div {
+  overflow: hidden;
+}
+
+.game-grid.active {
+  grid-template-rows: 1fr;
+  z-index: 2;
+}
 
 .btn-image-header {
   position: relative;
@@ -266,27 +290,78 @@ a.btn.btn-lg.btn-secondary {
 }
 
 .redirect-to-play-game-image-btn-1 {
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(
+      to bottom,
       rgba(245, 246, 252, 0.586),
-      rgba(117, 26, 19, 0.73)),
-    url("/assets/images/jedy-order-btn.jpg");
+      rgba(117, 26, 19, 0.73)
+    ),
+    url("../images/jedy-order-btn.jpg");
   opacity: 0.1;
 }
 
 .redirect-to-play-game-image-btn-2 {
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(
+      to bottom,
       rgba(245, 246, 252, 0.263),
-      rgba(19, 65, 117, 0.73)),
-    url("/assets/images/new-republic-btn.jpg");
+      rgba(19, 65, 117, 0.73)
+    ),
+    url("../images/new-republic-btn.jpg");
   opacity: 0.2;
 }
 
 .redirect-to-play-game-image-btn-3 {
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(
+      to bottom,
       rgba(245, 246, 252, 0.263),
-      rgba(50, 117, 19, 0.73)),
-    url("/assets/images/galactic-senate-btn.jpg");
+      rgba(50, 117, 19, 0.73)
+    ),
+    url("../images/galactic-senate-btn.jpg");
   opacity: 0.2;
 }
 
+/* yoda game styles */
+.yoda-game {
+  max-width: 51rem;
+  border: 1px solid #252525;
+  border-radius: 35px;
+  background: linear-gradient(225deg, #ffffff, #efefef);
+  box-shadow: 5px 8px 28px #666666, 5px 2px 28px #ffffff;
+  margin: 4px;
+  text-align: center;
+}
+
+.yoda-wrong-words {
+  margin: 0 2.5rem;
+}
+
+.yoda-img {
+  height: 18rem;
+}
+
+#yoda-words-wrong {
+  overflow-wrap: anywhere;
+  padding: 1rem 0 1rem 0;
+}
+.yoda-submit {
+  border-radius: 10px;
+}
+
+.button-end-yoda-game {
+  display: none;
+}
+.button-end-yoda-game.finished {
+  display: block;
+}
+
+.yoda-lock-change-color {
+  color: red;
+}
+
+.yoda-close {
+  margin-left: 90%;
+  margin-top: 1em;
+  font-size: 1.5em;
+  border: 2px solid;
+  padding: 2px 4px;
+}
 /* End Game page */

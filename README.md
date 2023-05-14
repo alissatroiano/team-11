@@ -98,5 +98,7 @@ Then follow the steps:
 ### Media:  
 
 ### Content used in website: 
+- [404 Error Page](https://freefrontend.com/html-css-404-page-templates/)
+- [Lightsaber](https://codepen.io/alissatroiano/pen/zYmLvYr)
 
 ## FUTURE FEATURES

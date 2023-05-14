@@ -60,7 +60,7 @@ body {
   left: 13%;
   right: 13%;
   height: 100%;
-  animation: play-scroll 30s forwards;
+  animation: play-scroll 60s forwards;
 }
 
 .sw-headings {

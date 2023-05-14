@@ -245,15 +245,21 @@ a.btn.btn-lg.btn-secondary {
     left: 51%;
   }
 }
+.game-container {
+  position: absolute;
+  inset: 0;
+}
 
 .game-grid {
+  height: 100%;
   position: relative;
-  z-index: 2;
+  z-index: -1;
   margin-top: 3em;
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows 500ms;
+  transition: grid-template-rows 600ms ease-in-out, z-index 900ms;
   justify-content: center;
+  align-items: center;
 }
 
 .game-grid > div {
@@ -262,10 +268,7 @@ a.btn.btn-lg.btn-secondary {
 
 .game-grid.active {
   grid-template-rows: 1fr;
-}
-
-.game-grid:hover {
-  grid-template-rows: 1fr;
+  z-index: 2;
 }
 
 .yoda-game-span {

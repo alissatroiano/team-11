@@ -405,11 +405,13 @@ a:hover {
   display: block;
 }
 
+.saber-lock-change-color,
 .yoda-lock-change-color,
 .maul-lock-change-color {
   color: var(--success-color);
 }
 
+.saber-close,
 .yoda-close,
 .maul-close {
   margin-left: 90%;
@@ -565,9 +567,12 @@ a:hover {
 /* contact page */
 
 .contact-page-bg-image{
-  background:url("../images/space.jpg") no-repeat center center  ;
-
+  background:url("../images/space.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
 }
+
 .team_title{
   color:beige;
 }

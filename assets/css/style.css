@@ -143,26 +143,23 @@ body {
 }
 /* columns side by side */
 .profile-card {
-  width: 33.3%;
-  margin: 20px;
-  padding: 15px 10px;
+  width: 20.3%;
+  margin: 10px;
+  padding: 10px 5px;
+  text-align: center;
 }
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
   .profile-card {
     width: 100%;
-     display: block;
+    display: block;
   }
 }
 
-/* Add some shadows to create a card effect */
-.card {
-  box-shadow: 0 10px 11px 0 rgba(0, 0, 0, 0.2);
-}
 
 /* Some left and right padding inside the container */
 .container {
-  padding: 10px 15px;
+  padding: 15px 10px;
 }
 
 /* Clear floats */
@@ -182,7 +179,7 @@ a {
   color: black;
   padding: 2px 13px;
   text-align: center;
-  margin: 1px;
+  margin: 2px;
 }
 
 a:hover {

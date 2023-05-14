@@ -18,13 +18,13 @@ body {
 
 
 #color_selector {
-    width: 350px;
+    max-width: 350px;
     margin: 0 auto;
-    position: fixed;
+    position: absolute;
     height: auto;
     padding: 10px 20px;
     top: 10;
-    right: 5%;
+    right: 3.5%;
     color: #fafafa;
 }
 
@@ -39,7 +39,7 @@ p.subtitle {
     font-family: var(--main-font);
     text-align: center;
     color: rgb(200, 200, 200);
-    max-width: 500px;
+    max-width: 800px;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -372,6 +372,10 @@ p.subtitle {
     -moz-transition: max-height .8s .8s;
     transition: max-height .8s .8s;
     max-height: 15em;
+}
+
+#blue-link {
+    color: rgb(0, 225, 255);
 }
 
 #blue:target~#lightsaber .light {

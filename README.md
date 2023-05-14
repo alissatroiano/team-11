@@ -22,7 +22,6 @@
 ## CONTROLS AND GAME RULES
 
 ## TYPOGRAPHY
-- Ubuntu is the font used for the body with sans serif used as a fallback font.
 - The share tech mono font has been selected as I feel as though it has a star wars feel to it
 - Most of the content is white text and a dark background or black with a white background.
 

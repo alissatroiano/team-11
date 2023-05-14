@@ -132,7 +132,37 @@ a.btn.btn-lg.btn-secondary {
   }
 }
 
-/* Game page */
+/* Yoda Minigame */
+
+.yoda-game {
+  max-width: 51rem;
+  border: 1px solid #252525;
+  border-radius: 35px;
+  background: linear-gradient(225deg, #ffffff, #EFEFEF);
+  box-shadow: 5px 8px 28px #666666, 5px 2px 28px #ffffff;
+  margin: 4px;
+  text-align: center;
+  
+}
+
+.yoda-wrong-words {
+  margin: 0 1rem 0 1rem;
+}
+
+.yoda-img {
+  height: 18rem;
+}
+
+#yoda-words-wrong {
+  overflow-wrap: anywhere;
+  padding: 1rem 0 1rem 0
+}
+.yoda-submit {
+  border-radius: 10px;
+}
+/* -------end-yoda-game */
+
+/* ------------- Main Game page */
 #game {
   height: 100vh;
   overflow: hidden;

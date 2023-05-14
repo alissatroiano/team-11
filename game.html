@@ -29,26 +29,35 @@
   <body onload="onloadFunction()">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-              <i class="fas fa-rocket"></i>
-               Death Scape</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                      <a class="nav-link" data-bs-toggle="modal" data-bs-target="#howTo">How To Play</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="game.html">Play</a>
-                  </li>
-              </ul>
-          </div>
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-rocket"></i>
+          Death Scape</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#howTo"
+                >How To Play</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="game.html">Play</a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </nav>
-
+    </nav>
 
     <section class="game" id="game">
       <div class="container-fluid">
@@ -67,17 +76,47 @@
         </div>
       </div>
 
+      <div class="game-grid yoda-words-game-grid">
+        <div class="game-content yoda-words-game-grid">
+          <section class="yoda-game container-fluid" id="yoda-game">
+            <div>
+              <p class="mt-3">What is Yoda Saying</p>
+              <p class="yoda-p">
+                Rearrange the words to show what Yoda might be saying in the
+                picture
+              </p>
+
+              <div class="row align-items-center d-flex flex-wrap">
+                <div class="col-md-6" id="yoda-pic-1"></div>
+
+                <div class="col-md-6 flex-column-reverse">
+                  <div id="yoda-words-wrong"></div>
+                  <div>
+                    <input id="answer" class="mb-3" type="text" />
+                    <button id="submit" class="yoda-submit">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 redirect-to-play-game-header">
-            <a
+            <span
+              class="yoda-game-span redirect-to-play-game-image-btn redirect-to-play-game-image-btn-1"
+            ></span>
+
+            <!-- <a
               href="yoda-game.html"
               role="button"
               class="redirect-to-play-game-image-btn redirect-to-play-game-image-btn-1"
               id="redirect-to-play-game-image-btn-1"
-            ></a>
+            ></a> -->
 
-            <a
+            <!-- <a
               href="whac-a-maul.html"
               role="button"
               class="redirect-to-play-game-image-btn redirect-to-play-game-image-btn-2"
@@ -88,37 +127,48 @@
               role="button"
               class="redirect-to-play-game-image-btn redirect-to-play-game-image-btn-3"
               id="redirect-to-play-game-image-btn-3"
-            ></a>
+            ></a> -->
           </div>
         </div>
       </div>
     </section>
 
-    <div class="modal fade" id="howTo" tabindex="-1" aria-labelledby="howToLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="howTo"
+      tabindex="-1"
+      aria-labelledby="howToLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h1 class="modal-title display-2" id="howToLabel"></h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body container">
-                  <div class="row">
-                      <div class="col-12">
-                          <h2>HOW TO PLAY</h2>
-                      </div>
-                      <div class="col-12">
-                          <ul class="my-0 mx-auto p-3 list-group">
-                              <li>Lorem ipsum dolor sit amet,</li>
-                              <li>Consectetur adipiscing elit</li>
-                              sed do eiusmod tempor incididunt ut labore et dolore magna
-                              aliqua.
-                          </ul>
-                      </div>
-                  </div>
-              </div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title display-2" id="howToLabel"></h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
+          <div class="modal-body container">
+            <div class="row">
+              <div class="col-12">
+                <h2>HOW TO PLAY</h2>
+              </div>
+              <div class="col-12">
+                <ul class="my-0 mx-auto p-3 list-group">
+                  <li>Lorem ipsum dolor sit amet,</li>
+                  <li>Consectetur adipiscing elit</li>
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
+    </div>
 
     <!--Load Bootstrap Scripts-->
     <script

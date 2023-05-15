@@ -22,7 +22,7 @@
 ## CONTROLS AND GAME RULES
 
 ## TYPOGRAPHY
-- The share tech mono font has been selected as I feel as though it has a star wars feel to it
+- The star wars font and share tech mono font has been selected.
 - Most of the content is white text and a dark background or black with a white background.
 
 ## FEATURES

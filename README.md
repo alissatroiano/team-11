@@ -92,8 +92,11 @@ Then follow the steps:
 
 ## CITATION OF SOURCES
 ### Media:
-- [https://imgbin.com/free-png/yoda]
+- [Shutterstock]()
 
 ### Content used in website: 
+- [404 Error Page](https://freefrontend.com/html-css-404-page-templates/)
+- [Lightsaber](https://codepen.io/alissatroiano/pen/zYmLvYr)
+- [Lightsaber Content](https://screenrant.com/star-wars-lightsaber-color-meaning-canon/#darksaber-black-lightsaber)
 
 ## FUTURE FEATURES

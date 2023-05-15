@@ -6,8 +6,7 @@
 :root {
   --danger-color: #d13443;
   --success-color: #20c997;
-  --yellow: #f9bf11;
-  --purple: #0e0428;
+
   --title: "star wars", serif;
   --main-font: "share tech mono", serif;
 }
@@ -44,24 +43,27 @@ a.btn.btn-lg.btn-secondary {
   /* Firefox */
 }
 
-i.fas.fa-rocket {
-  color: var(--yellow);
+i.fas {
+  color: #ebc417;
 }
 
 a.nav-link:hover,
 .navbar li:hover,
 a:hover {
-    color: #ebc417;
+    color: rgb(235, 197, 25);
 }
 
 /* Navbar */
 .bg-main {
-  background-color: none;
+  background-color: #151517;
 }
 
-.bg-game {
-  background-color: #274d5ca8;
+.navbar li,
+.navbar-brand {
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
 }
+
 
 .bg-purple{
   background: linear-gradient(#220e5a38, #16052e70 43%, #0b090f91),url('../images/space.jpg');
@@ -72,559 +74,69 @@ a:hover {
   overflow: hidden;
 }
 
-a.nav-link,
-a.navbar li,
-.navbar li {
-  font-family: 'Dosis', sans-serif;
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: 1.5px;
-  color: #fafafa;
-}
 
-.navbar li:hover {
-  color: var(--yellow);
-}
-
-.navbar-brand {
-  font-family: 'Dosis', sans-serif;
-  text-transform: uppercase;
-  font-size: 1.25rem;
-  letter-spacing: 1.5px;
-  font-size: 1.25rem;
-  letter-spacing: 1.5px;
-}
-
-/* index star wars sw scroll */
-.sw-body {
-  color: #ffbe00;
-  font-family: sans-serif;
-  font-size: 5vw;
-  line-height: 1.3;
-  overflow: hidden;
-  height: 50vh;
-}
-
-.sw-container {
-  margin: 0 auto;
-  perspective: 400px;
-  perspective-origin: bottom;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  transform: scaleY(0.9);
-  z-index: -1000;
-}
-
-.sw-credits {
-  position: absolute;
-  top: 0;
-  left: 13%;
-  right: 13%;
-  height: 100%;
-  animation: play-scroll 60s forwards;
-}
-
-.sw-headings {
-  margin-bottom: 5rem;
-}
-
-.sw-h1 {
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-.sw-h2 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-@keyframes play-scroll {
-  0% {
-    transform: rotateX(21deg) translate3d(0, 100rem, 0);
-    opacity: 1;
-  }
-
-  100% {
-    transform: rotateX(21deg) translate3d(0, -150rem, 0);
-    opacity: 0;
-  }
-}
-
-.cover {
-  background: linear-gradient(#151616c2, #2f303054 43%, #181818b8),
-    url("/assets/images/space.jpg") no-repeat center center;
-  background-size: cover;
-  background-position: left top;
-  min-height: 100vh;
-  overflow: hidden;
-}
-
-@media (max-width: 790px) {
-  #color_selector,
-  .copy {
-    position: relative;
-    width: auto;
-  }
-
-  #color_selector {
-    margin: 1em auto;
-    width: 80%;
-    right: 0;
-  }
-
-  .copy {
-    padding: 0;
-  }
-
-  #bg {
-    bottom: -59%;
-  }
-}
-
-/* Game page */
-#game {
-  height: 100vh;
-  overflow: hidden;
-  background: linear-gradient(#15161694, #3a3e3e24 43%, #18181887),
-    url("../images/game-bg.jpg") no-repeat center center;
-  background-size: cover;
-  position: relative;
-}
-
-.locked-door-light {
-  color: var(--danger-color);
-  padding: 11px;
-  border-radius: 50%;
-  font-size: 170%;
-}
-
-.locked-door-light-1 {
-  position: absolute;
-  top: 90px;
-  left: 38%;
-}
-
-.locked-door-light-2 {
-  position: absolute;
-  top: 90px;
-  left: 46%;
-}
-
-.locked-door-light-3 {
-  position: absolute;
-  top: 90px;
-  left: 54%;
-}
-
-@media only screen and (min-width: 400px) {
-  .locked-door-light-1 {
-    left: 40%;
-  }
-
-  .locked-door-light-2 {
-    left: 47%;
-  }
-
-  .locked-door-light-3 {
-    left: 54%;
-  }
-}
-
-@media only screen and (min-width: 500px) {
-  .locked-door-light {
-    padding: 12px;
-  }
-
-  .locked-door-light-1 {
-    left: 42%;
-  }
-
-  .locked-door-light-2 {
-    left: 47%;
-  }
-
-  .locked-door-light-3 {
-    left: 52%;
-  }
-}
-
-@media only screen and (min-width: 650px) {
-  .locked-door-light-1 {
-    left: 44%;
-  }
-
-  .locked-door-light-2 {
-    left: 48%;
-  }
-
-  .locked-door-light-3 {
-    left: 52%;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .locked-door-light-1 {
-    left: 46%;
-  }
-
-  .locked-door-light-2 {
-    left: 49%;
-  }
-
-  .locked-door-light-3 {
-    left: 52%;
-  }
-}
-
-@media only screen and (min-width: 1250px) {
-  .locked-door-light {
-    padding: 13px;
-  }
-
-  .locked-door-light-1 {
-    top: 130px;
-    left: 47%;
-  }
-
-  .locked-door-light-2 {
-    top: 130px;
-    left: 49%;
-  }
-
-  .locked-door-light-3 {
-    top: 130px;
-    left: 51%;
-  }
-}
-.game-container {
-  position: absolute;
-  inset: 0;
-}
-
-.game-grid {
-  height: 100%;
-  position: relative;
-  z-index: -1;
-  margin-top: 3em;
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 600ms ease-in-out, z-index 900ms;
-  justify-content: center;
-  align-items: center;
-}
-
-.game-grid > div {
-  overflow: hidden;
-}
-
-.game-grid.active {
-  grid-template-rows: 1fr;
-  z-index: 2;
-}
-
-.whac-a-maul-grid {
-  min-height: 100%;
-  position: relative;
-  z-index: -1;
-  margin-top: 3em;
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: transform 600ms ease-in-out, z-index 900ms;
-  justify-content: center;
-  align-items: center;
-  transform: translateX(-500%);
-}
-
-.whac-a-maul-grid > div {
-  overflow: hidden;
-}
-
-.whac-a-maul-grid.active {
-  grid-template-rows: 1fr;
-  transition: transform 600ms ease-in-out, z-index 600ms;
-  z-index: 2;
-  transform: translateX(0);
-}
-
-.btn-image-header {
-  position: relative;
-}
-
-.redirect-to-play-game-image-btn:hover {
-  transform: scale(1.3);
-  transition-duration: 500ms;
-  opacity: 1;
-}
-
-
-/* End Game page */
-
-.redirect-to-play-game-image-btn {
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  border-radius: 50%;
-  position: absolute;
-}
-
-
-.redirect-to-play-game-image-btn-1 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(245, 246, 252, 0.586),
-      rgba(117, 26, 19, 0.73)
-    ),
-    url("../images/jedy-order-btn.jpg");
-  opacity: 0.1;
-}
-
-.redirect-to-play-game-image-btn-2 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(245, 246, 252, 0.263),
-      rgba(19, 65, 117, 0.73)
-    ),
-    url("../images/new-republic-btn.jpg");
-  opacity: 0.2;
-}
-
-.redirect-to-play-game-image-btn-3 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(245, 246, 252, 0.263),
-      rgba(50, 117, 19, 0.73)
-    ),
-    url("../images/galactic-senate-btn.jpg");
-  opacity: 0.2;
-}
-
-/* yoda game styles */
-.yoda-game {
-  max-width: 51rem;
-  border: 1px solid #252525;
-  border-radius: 35px;
-  background: linear-gradient(225deg, #ffffff, #efefef);
-  box-shadow: 5px 8px 28px #666666, 5px 2px 28px #ffffff;
-  margin: 4px;
-  text-align: center;
-}
-
-.yoda-wrong-words {
-  margin: 0 2.5rem;
-}
-
-.yoda-img {
-  height: 18rem;
-}
-
-#yoda-words-wrong {
-  overflow-wrap: anywhere;
-  padding: 1rem 0 1rem 0;
-}
-.yoda-submit {
-  border-radius: 10px;
-}
-
-.button-end-yoda-game {
-  display: none;
-}
-.button-end-yoda-game.finished {
-  display: block;
-}
-
-.yoda-lock-change-color,
-.maul-lock-change-color {
-  color: var(--success-color);
-}
-
-.yoda-close,
-.maul-close {
-  margin-left: 90%;
-  margin-top: 1em;
-  font-size: 1.5em;
-  border: 2px solid;
-  padding: 2px 4px;
-}
-
-/* Whack-a-maul maul whack styles */
-.whac-wrapper {
-  box-sizing: border-box;
-  border: 1px solid #252525;
-  border-radius: 35px;
-  background: linear-gradient(225deg, #ffffff, #efefef);
-  box-shadow: -5px 8px 28px #666666, 5px 2px 28px #ffffff;
-  min-height: 600px;
-  max-width: 1000px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url(../images/tatooine.webp);
-  overflow: hidden;
-}
-
-.whac-title {
-  text-align: center;
-  margin: 10px 0;
-}
-
-.whac-title h1 {
-  padding: 5px;
-}
-
-.whac-title p {
-  font-size: 17px;
-  font-weight: bold;
-}
-
-.whac-stats {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.whac-stats div,
-.whac-start button {
-  padding: 5px 20px;
-}
-
-.whac-game {
-  max-width: 600px;
-  max-height: 400px;
-  margin-bottom: 50px;
-  margin-top: 20px;
-}
-
-.hole-wrapper {
-  height: 100%;
-  margin: 0;
-  flex-wrap: wrap;
-}
-
-.hole {
-  min-height: 125px;
-  min-width: fit-content;
-  position: relative;
-  margin: 30px 0;
-}
-
-.hole:after {
-  content: "";
-  display: block;
-  background-image: url(../images/sand-heap.webp);
-  position: absolute;
-  width: 100%;
-  height: 80px;
-  z-index: 2;
-  bottom: -18px;
-  background-size: 80%;
-  background-repeat: no-repeat;
-}
-
-.maul {
-  background-image: url(../images/maul-cartoon.webp);
-  position: absolute;
-  display: none;
-  left: -8px;
-  width: 100%;
-  height: 100%;
-  transition: 0.4s;
-  background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: bottom;
-}
-
-.hole.up .maul {
-  display: block;
-  top: 5px;
-}
-
-/* Modal styles */
-.whac-modal-container {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-
-@media only screen and (min-width: 400px) {
-  .locked-door-light-1 {
-    left: 40%;
-  }
+/* contact page */
 
 .contact-page-bg-image{
-  background:url("../images/space.jpg") no-repeat center center  ;
+  background:url("../images/space.jpg") no-repeat center center;
+}
 
-}
 .team_title{
-  color:beige;
+  color: #ebc417;
+  letter-spacing: 3.2px;
+  font-weight: 200;
 }
+
 /* columns side by side */
 .profile-card {
   width: 20.3%;
-  margin: 10px;
-  padding: 10px 5px;
+  margin: 11px;
+  padding: 1px 1px;
   text-align: center;
+
 }
-/* Display the columns below each other instead of side by side on small screens */
+/* Display the columns below each other instead of side by side on small screens*/
 @media screen and (max-width: 650px) {
   .profile-card {
-    width: 100%;
+    width: 43.3%;
     display: block;
   }
 }
+ 
+/* Some left and right padding inside the page container */
+.page-container {
+  padding: 2px 20px;
+}
 
-
-/* Some left and right padding inside the container */
-.container {
-  padding: 15px 10px;
+/* Some left and right padding inside the card container */
+.card-container {
+  padding: 1px 1px;
 }
 
 /* Clear floats */
-.container::after, .row::after {
+.card-container::after, .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.title {
-  color: grey;
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  padding: 2px 13px;
+  text-align: center;
+  margin: 2px;
 }
 
-  .locked-door-light-2 {
-    left: 49%;
-  }
-
-  .locked-door-light-3 {
-    left: 52%;
-  }
+a:hover {
+  opacity: 0.7;
 }
 
-@media only screen and (min-width: 1250px) {
-  .locked-door-light {
-    padding: 13px;
-  }
-
-  .locked-door-light-1 {
-    top: 130px;
-    left: 47%;
-  }
-
-  .locked-door-light-2 {
-    top: 130px;
-    left: 49%;
-  }
-
-  .locked-door-light-3 {
-    top: 130px;
-    left: 51%;
-  }
+.button:hover {
+  background-color: #555;
 }
+
+/* End Contact page */
+

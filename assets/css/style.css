@@ -139,6 +139,7 @@ a.navbar li,
   animation-iteration-count: 1;
 }
 
+#soundtrack { display: none }
 
 /* Standard syntax */
 @keyframes star-wars {

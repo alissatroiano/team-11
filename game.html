@@ -1,259 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Load Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/lightsabers.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Game</title>
+    <!-- Site favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--Load Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Bootstrap CDN-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/lightsabers.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <title>Game</title>
-  <!-- Site favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
-</head>
-
-<body onload="onloadFunction()">
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <i class="fas fa-rocket"></i>
-        Death Scape</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#howTo">How To Play</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="game.html">Play</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Team</a>
-          </li>
-        </ul>
+  <body onload="onloadFunction()">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <i class="fas fa-rocket"></i>
+          Death Scape</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#howTo"
+                >How To Play</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="game.html">Play</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Team</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <section class="game" id="game">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div class="locked-door-light locked-door-light-1">
-            <i class="fa-solid fa-lock yoda-lock-1"></i>
-          </div>
-          <div class="locked-door-light locked-door-light-2">
-            <i class="fa-solid fa-lock maul-lock-2"></i>
-          </div>
-          <div class="locked-door-light locked-door-light-3" id="saberDoor">
-            <i class="fa-solid fa-lock lightsaber-door-light-3"></i>
+    <section class="game" id="game">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="locked-door-light locked-door-light-1">
+              <i class="fa-solid fa-lock yoda-lock-1"></i>
+            </div>
+            <div class="locked-door-light locked-door-light-2">
+              <i class="fa-solid fa-lock maul-lock-2"></i>
+            </div>
+            <div class="locked-door-light locked-door-light-3" id="saberDoor">
+              <i class="fa-solid fa-lock lightsaber-door-light-3"></i>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="game-container">
-      <div class="game-grid yoda-words-game-grid game">
-        <div class="game-content yoda-words-game-grid">
-          <section class="yoda-game container-fluid" id="yoda-game">
-            <div>
-              <i class="fa fa-times yoda-close" aria-hidden="true"></i>
-              <p class="mt-3">What is Yoda Saying</p>
-              <p class="yoda-p">
-                Rearrange the words to show what Yoda might be saying in the
-                picture
-              </p>
+      <div class="game-container">
+        <div class="game-grid yoda-words-game-grid game">
+          <div class="game-content yoda-words-game-grid">
+            <section class="yoda-game container-fluid" id="yoda-game">
+              <div>
+                <i class="fa fa-times yoda-close" aria-hidden="true"></i>
+                <p class="mt-3">What is Yoda Saying</p>
+                <p class="yoda-p">
+                  Rearrange the words to show what Yoda might be saying in the
+                  picture
+                </p>
 
-              <div class="row align-items-center d-flex flex-wrap" id="yoda-row">
-                <div class="col" id="yoda-pic-1"></div>
-                <div class="col flex-column-reverse">
-                  <div id="yoda-words-wrong"></div>
-                  <div>
-                    <input id="answer" class="mb-3" type="text" />
-                    <button id="submit" class="yoda-submit">Submit</button>
-                    <button class="yoda-submit button-end-yoda-game">
-                      Finish Game
-                    </button>
+                <div
+                  class="row align-items-center d-flex flex-wrap"
+                  id="yoda-row"
+                >
+                  <div class="col" id="yoda-pic-1"></div>
+                  <div class="col flex-column-reverse">
+                    <div id="yoda-words-wrong"></div>
+                    <div>
+                      <input id="answer" class="mb-3" type="text" />
+                      <button id="submit" class="yoda-submit">Submit</button>
+                      <button class="yoda-submit button-end-yoda-game">
+                        Finish Game
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="game-container">
+        <div class="whac-a-maul-grid">
+          <div class="game-content whack-a-maul-content">
+            <div class="container-fluid whac-wrapper">
+              <i class="fa fa-times maul-close" aria-hidden="true"></i>
+              <div class="whac-title">
+                <h1>Whac-a-Maul</h1>
+                <p>
+                  Qui-Gon Jinn and Obi-Wan Kenobi need your help...<br />
+                  Darth Maul is back on Tatooine and this time he must be
+                  defeated!<br />
+                  It should take 8 whacks to finish him off...good luck!
+                </p>
+              </div>
+
+              <div class="whac-stats">
+                <div>Score: <span id="whac-score"></span></div>
+                <div class="whac-start">
+                  <button id="whac-start-btn" disabled>Start Game!</button>
+                </div>
+                <div><span id="whac-timer"></span></div>
+              </div>
+
+              <div class="container-fluid whac-game">
+                <div class="row hole-wrapper">
+                  <div class="col-6 col-md-4 hole" id="maul1">
+                    <div class="maul dead"></div>
+                  </div>
+                  <div class="col-6 col-md-4 hole" id="maul2">
+                    <div class="maul dead"></div>
+                  </div>
+                  <div class="col-6 col-md-4 hole" id="maul3">
+                    <div class="maul dead"></div>
+                  </div>
+                  <div class="col-6 col-md-4 hole" id="maul4">
+                    <div class="maul dead"></div>
+                  </div>
+                  <div class="col-6 col-md-4 hole" id="maul5">
+                    <div class="maul dead"></div>
+                  </div>
+                  <div class="col-6 col-md-4 hole" id="maul6">
+                    <div class="maul dead"></div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+
+            <!-- Modals -->
+            <div>
+              <!-- Win Modal -->
+              <div
+                tabindex="0"
+                class="whac-modal-container"
+                id="whac-win-modal"
+              >
+                <div class="whac-modal-content">
+                  <p>
+                    You defeated Darth Maul! The Force is truly strong in you
+                    young jedi.
+                  </p>
+                  <img
+                    class="whac-saber-image"
+                    src="assets/images/whac-a-sabre.webp"
+                    alt="Blue light saber"
+                  />
+                  <button
+                    type="button"
+                    id="unlock-button"
+                    class="btn btn-info btn-whack-a-maul-end"
+                  >
+                    Release Escape Pod Lock
+                  </button>
+                </div>
+              </div>
+              <!-- Lose Modal -->
+              <div
+                tabindex="0"
+                class="whac-modal-container"
+                id="whac-lose-modal"
+              >
+                <div class="whac-modal-content">
+                  <p>Darth Maul has defeated you!</p>
+                  <img
+                    class="skull-image"
+                    src="assets/images/skull.webp"
+                    alt="Skull and crossbones"
+                  />
+                  <p>
+                    Take a moment to remember that the Force will always be with
+                    you. You just need to believe it. Now, let's try again...
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-dark btn-whack-a-maul-end-fail"
+                    id="repeat-button"
+                  >
+                    Try Again
+                  </button>
+                  <a class="btn btn-dark" href="game.html">Back</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="game-container">
-      <div class="whac-a-maul-grid">
-        <div class="game-content whack-a-maul-content">
-          <div class="container-fluid whac-wrapper">
-            <i class="fa fa-times maul-close" aria-hidden="true"></i>
-            <div class="whac-title">
-              <h1>Whac-a-Maul</h1>
-              <p>
-                Qui-Gon Jinn and Obi-Wan Kenobi need your help...<br />
-                Darth Maul is back on Tatooine and this time he must be
-                defeated!<br />
-                It should take 8 whacks to finish him off...good luck!
+
+      <div class="game-container end-game-container">
+        <div class="end-game-grid">
+          <div class="game-content end-game-content">
+            <i class="fa fa-times end-game-close" aria-hidden="true"></i>
+            <p class="end-game-p">THE FORCE IS STRONG WITH YOU!</p>
+            <p class="end-game-p">You have escaped, enjoy your freedom!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 redirect-to-play-game-header">
+            <span
+              class="yoda-game-span redirect-to-play-game-image-btn redirect-to-play-game-image-btn-1"
+              id="redirect-to-play-game-image-btn-1"
+            ></span>
+
+            <span
+              class="redirect-to-play-game-image-btn redirect-to-play-game-image-btn-2"
+              id="redirect-to-play-game-image-btn-2"
+            ></span>
+            <a
+              href="#lightsabers"
+              role="button"
+              data-bs-toggle="modal"
+              data-bs-target="#lightsabers"
+            >
+              <span
+                class="redirect-to-play-game-image-btn redirect-to-play-game-image-btn-3"
+                id="redirect-to-play-game-image-btn-3"
+              ></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--lightsaber game modal-->
+    <div
+      class="modal top fade"
+      id="lightsabers"
+      tabindex="-1"
+      aria-labelledby="saberLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen" id="sabers">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title text-light">Build a Lightsaber</h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white lightsaber-btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              id="closeBtn"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <p class="subtitle">
+                Greetings, youngling! If you've made it this far, you are ready
+                to use your kyber crystal to build your very own lightsaber!
+                This is no small task. Use the color selector below to guide
+                your decision.
+                <strong>Click on the lightsaber when you're done!</strong>
+              </p>
+            </div>
+            <span class="c" id="blue"></span>
+            <span class="c" id="red"></span>
+            <span class="c" id="green"></span>
+            <span class="c" id="purple"></span>
+            <span class="c" id="yellow"></span>
+            <span class="c" id="orange"></span>
+            <span class="c" id="darksaber"></span>
+            <span class="c" id="white"></span>
+            <div id="color_selector">
+              <ul>
+                <li><a href="#white" class="white">White</a></li>
+                <li><a href="#blue" class="blue">Blue</a></li>
+                <li><a href="#red" class="red">Red</a></li>
+                <li><a href="#green" class="green">Green</a></li>
+                <li><a href="#purple" class="purple">Purple</a></li>
+                <li><a href="#yellow" class="yellow">Yellow</a></li>
+                <li><a href="#orange" class="orange">Orange</a></li>
+                <li>
+                  <a href="#darksaber" class="darksaber" onclick="lightSaber()"
+                    >Darksaber</a
+                  >
+                </li>
+              </ul>
+              <p class="p_blue">
+                Blue lightsabers are said to represent righteousness and
+                bravery, mostly by association with what the Jedi stand for, as
+                well as the user's strong “spiritual alignment” with the
+                crystal.
+              </p>
+              <p class="p_red">
+                Red lightsabers are wielded by Sith Lords, including Darth
+                Vader, Darth Maul, and the Grand Inquisitor
+              </p>
+              <p class="p_green">
+                Green lightsabers are usually often wielded by Jedi Consulars,
+                deep thinkers who studied the inner workings of the Force.
+              </p>
+              <p class="p_purple">
+                Purple lightsabers are less common, but they are often seen as a
+                sign of nobility and wisdom.
+              </p>
+              <p class="p_yellow">
+                Yellow is exclusively used by Jedi Temple guards, either
+                intentionally to distinguish them, or by the crystal choosing
+                who should be a temple guard.
+              </p>
+              <p class="p_orange">
+                Orange lightsabers are associated with ambition, creativity, and
+                resourcefulness.
+              </p>
+              <p class="p_darksaber">
+                The Darksaber is a one-of-a-kind blade created several centuries
+                before the Skywalker Saga by Tarre Vizsla, the first Mandalorian
+                Jedi. Wield this and you'll earn the respect of every
+                Mandalorian
+              </p>
+              <p class="p_white">
+                White lightsabers originally emitted a red blade, until Ahsoka
+                Tano purified them to display her independance from both Jedi
+                and Sith.
               </p>
             </div>
 
-            <div class="whac-stats">
-              <div>Score: <span id="whac-score"></span></div>
-              <div class="whac-start">
-                <button id="whac-start-btn" disabled>Start Game!</button>
-              </div>
-              <div><span id="whac-timer"></span></div>
-            </div>
+            <div id="lightsaber">
+              <span id="light"></span>
+              <span id="generator">
+                <span id="guard">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+                <a href="game.html">
+                  <span id="handlestart">
+                    <span></span>
+                    <span></span>
+                  </span>
+                  <span id="handle">
+                    <span></span>
+                    <span></span>
+                    <span></span><span></span> <span></span><span></span>
+                    <span></span><span></span> <span></span><span></span>
+                    <span class="long"></span>
+                    <span class="long"></span>
+                    <span class="box"></span>
+                  </span>
+                </a>
 
-            <div class="container-fluid whac-game">
-              <div class="row hole-wrapper">
-                <div class="col-6 col-md-4 hole" id="maul1">
-                  <div class="maul dead"></div>
-                </div>
-                <div class="col-6 col-md-4 hole" id="maul2">
-                  <div class="maul dead"></div>
-                </div>
-                <div class="col-6 col-md-4 hole" id="maul3">
-                  <div class="maul dead"></div>
-                </div>
-                <div class="col-6 col-md-4 hole" id="maul4">
-                  <div class="maul dead"></div>
-                </div>
-                <div class="col-6 col-md-4 hole" id="maul5">
-                  <div class="maul dead"></div>
-                </div>
-                <div class="col-6 col-md-4 hole" id="maul6">
-                  <div class="maul dead"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Modals -->
-          <div>
-            <!-- Win Modal -->
-            <div tabindex="0" class="whac-modal-container" id="whac-win-modal">
-              <div class="whac-modal-content">
-                <p>
-                  You defeated Darth Maul! The Force is truly strong in you
-                  young jedi.
-                </p>
-                <img class="whac-saber-image" src="assets/images/whac-a-sabre.webp" alt="Blue light saber" />
-                <button type="button" id="unlock-button" class="btn btn-info btn-whack-a-maul-end">
-                  Release Escape Pod Lock
-                </button>
-              </div>
-            </div>
-            <!-- Lose Modal -->
-            <div tabindex="0" class="whac-modal-container" id="whac-lose-modal">
-              <div class="whac-modal-content">
-                <p>Darth Maul has defeated you!</p>
-                <img class="skull-image" src="assets/images/skull.webp" alt="Skull and crossbones" />
-                <p>
-                  Take a moment to remember that the Force will always be with
-                  you. You just need to believe it. Now, let's try again...
-                </p>
-                <button type="button" class="btn btn-dark btn-whack-a-maul-end-fail" id="repeat-button">
-                  Try Again
-                </button>
-                <a class="btn btn-dark" href="game.html">Back</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 redirect-to-play-game-header">
-          <span class="yoda-game-span redirect-to-play-game-image-btn redirect-to-play-game-image-btn-1"
-            id="redirect-to-play-game-image-btn-1"></span>
-
-          <span class="redirect-to-play-game-image-btn redirect-to-play-game-image-btn-2"
-            id="redirect-to-play-game-image-btn-2"></span>
-          <a href="#lightsabers" role="button" data-bs-toggle="modal" data-bs-target="#lightsabers">
-            <span class="redirect-to-play-game-image-btn redirect-to-play-game-image-btn-3"
-              id="redirect-to-play-game-image-btn-3"></span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--lightsaber game modal-->
-  <div class="modal top fade" id="lightsabers" tabindex="-1" aria-labelledby="saberLabel" aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen" id="sabers">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title text-light">Build a Lightsaber</h1>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"
-            id="closeBtn"></button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <p class="subtitle">Greetings, youngling! If you've made it this far, you are ready to use your kyber
-              crystal to build your very own lightsaber! This is no small task. Use the color selector below to guide
-              your decision. <strong>Click on the lightsaber when you're done!</strong></p>
-          </div>
-          <span class="c" id="blue"></span>
-          <span class="c" id="red"></span>
-          <span class="c" id="green"></span>
-          <span class="c" id="purple"></span>
-          <span class="c" id="yellow"></span>
-          <span class="c" id="orange"></span>
-          <span class="c" id="darksaber"></span>
-          <span class="c" id="white"></span>
-          <div id="color_selector">
-            <ul>
-              <li><a href="#white" class="white">White</a></li>
-              <li><a href="#blue" class="blue">Blue</a></li>
-              <li><a href="#red" class="red">Red</a></li>
-              <li><a href="#green" class="green">Green</a></li>
-              <li><a href="#purple" class="purple">Purple</a></li>
-              <li><a href="#yellow" class="yellow">Yellow</a></li>
-              <li><a href="#orange" class="orange" >Orange</a></li>    
-              <li><a href="#darksaber" class="darksaber" onclick="lightSaber()">Darksaber</a></li>
-            </ul>
-            <p class="p_blue">Blue lightsabers are said to represent righteousness and bravery, mostly by association
-              with what the Jedi stand for, as well as the user's strong “spiritual alignment” with the crystal.</p>
-            <p class="p_red">Red lightsabers are wielded by Sith Lords, including Darth Vader, Darth Maul, and the Grand
-              Inquisitor </p>
-            <p class="p_green">Green lightsabers are usually often wielded by Jedi Consulars, deep thinkers who studied
-              the inner workings of the Force.</p>
-            <p class="p_purple">Purple lightsabers are less common, but they are often seen as a sign of nobility and
-              wisdom.</p>
-            <p class="p_yellow">Yellow is exclusively used by Jedi Temple guards, either intentionally to distinguish
-              them, or by the crystal choosing who should be a temple guard. </p>
-            <p class="p_orange">Orange lightsabers are associated with ambition, creativity, and resourcefulness. </p>
-            <p class="p_darksaber">The Darksaber is a one-of-a-kind blade created several centuries before the Skywalker
-              Saga by Tarre Vizsla, the first Mandalorian Jedi. Wield this and you'll earn the respect of every
-              Mandalorian</p>
-            <p class="p_white">White lightsabers originally emitted a red blade, until Ahsoka Tano purified them to
-              display her independance from both Jedi and Sith.</p>
-          </div>
-
-          <div id="lightsaber">
-            <span id="light"></span>
-            <span id="generator">
-              <span id="guard">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="wings">
+                  <span class="wing wing1"></span>
+                  <span class="wing wing2"></span>
+                  <span class="wing wing3"></span>
+                </span>
               </span>
-              <a href="game.html">
+            </div>
+
+            <div id="darksaber">
+              <span id="dark"></span>
+              <span id="generator">
+                <span id="guard">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
                 <span id="handlestart">
                   <span></span>
                   <span></span>
@@ -261,108 +401,82 @@
                 <span id="handle">
                   <span></span>
                   <span></span>
-                  <span></span><span></span>
-                  <span></span><span></span>
-                  <span></span><span></span>
-                  <span></span><span></span>
+                  <span></span><span></span> <span></span><span></span>
+                  <span></span><span></span> <span></span><span></span>
                   <span class="long"></span>
                   <span class="long"></span>
                   <span class="box"></span>
                 </span>
-              </a>
-
-              <span class="wings">
-                <span class="wing wing1"></span>
-                <span class="wing wing2"></span>
-                <span class="wing wing3"></span>
+                <span class="wings">
+                  <span class="wing wing1"></span>
+                  <span class="wing wing2"></span>
+                  <span class="wing wing3"></span>
+                </span>
               </span>
-            </span>
-          </div>
-
-          <div id="darksaber">
-            <span id="dark"></span>
-            <span id="generator">
-              <span id="guard">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-              <span id="handlestart">
-                <span></span>
-                <span></span>
-              </span>
-              <span id="handle">
-                <span></span>
-                <span></span>
-                <span></span><span></span>
-                <span></span><span></span>
-                <span></span><span></span>
-                <span></span><span></span>
-                <span class="long"></span>
-                <span class="long"></span>
-                <span class="box"></span>
-              </span>
-              <span class="wings">
-                <span class="wing wing1"></span>
-                <span class="wing wing2"></span>
-                <span class="wing wing3"></span>
-              </span>
-            </span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!--How to Play-->
-  <div class="modal fade" id="howTo" tabindex="-1" aria-labelledby="howToLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title display-2" id="howToLabel"></h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body container">
-          <div class="row">
-            <div class="col-12">
-              <h2>how to play</h2>
+    <!--How to Play-->
+    <div
+      class="modal fade"
+      id="howTo"
+      tabindex="-1"
+      aria-labelledby="howToLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title display-2" id="howToLabel"></h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body container">
+            <div class="row">
               <div class="col-12">
-                <ul class="my-0 mx-auto p-3 list-group">
-                  <li>Click the play button to start the game</li>
-                  <li>Search the ship for mini games</li>
-                  <li>Complete the games to unlock the door</li>
-                  <li>
-                    Once all the padlocks above the door have changed
-                    colour, the door will open and you can escape
-                  </li>
-                </ul>
+                <h2>how to play</h2>
+                <div class="col-12">
+                  <ul class="my-0 mx-auto p-3 list-group">
+                    <li>Click the play button to start the game</li>
+                    <li>Search the ship for mini games</li>
+                    <li>Complete the games to unlock the door</li>
+                    <li>
+                      Once all the padlocks above the door have changed colour,
+                      the door will open and you can escape
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script>
-    function lightSaber() {
-      var x = document.getElementById("lightsaber");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
+    <script>
+      function lightSaber() {
+        var x = document.getElementById("lightsaber");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
       }
-    }
-  </script>
-  
+    </script>
 
-  <!--Load Bootstrap Scripts-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
-  <script src="assets/js/game.js"></script>
-</body>
-
+    <!--Load Bootstrap Scripts-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/game.js"></script>
+  </body>
 </html>

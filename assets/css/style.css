@@ -23,7 +23,8 @@ body {
   background: linear-gradient(#151616c2, #2f303054 43%, #181818b8),
     url("/assets/images/space.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* Game page */
@@ -126,8 +127,6 @@ body {
     left: 51%;
   }
 }
-
-
 /* End Game page */
 
 
@@ -135,35 +134,40 @@ body {
 /* contact page */
 
 .contact-page-bg-image{
-  background:url("../images/space.jpg") no-repeat center center  ;
-
+  background:url("../images/space.jpg") no-repeat center center;
 }
+
 .team_title{
   color:beige;
 }
 /* columns side by side */
 .profile-card {
   width: 20.3%;
-  margin: 10px;
-  padding: 10px 5px;
+  margin: 11px;
+  padding: 1px 1px;
   text-align: center;
+
 }
-/* Display the columns below each other instead of side by side on small screens */
+/* Display the columns below each other instead of side by side on small screens*/
 @media screen and (max-width: 650px) {
   .profile-card {
-    width: 100%;
+    width: 43.3%;
     display: block;
   }
 }
+ 
+/* Some left and right padding inside the page container */
+.page-container {
+  padding: 2px 20px;
+}
 
-
-/* Some left and right padding inside the container */
-.container {
-  padding: 15px 10px;
+/* Some left and right padding inside the card container */
+.card-container {
+  padding: 1px 1px;
 }
 
 /* Clear floats */
-.container::after, .row::after {
+.card-container::after, .row::after {
   content: "";
   clear: both;
   display: table;

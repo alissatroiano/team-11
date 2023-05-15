@@ -1,12 +1,15 @@
 @import url("https://fonts.cdnfonts.com/css/star-wars");
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+*, ::after, ::before {
+    box-sizing: inherit;
+}
 
 :root {
     --title: "star wars", serif;
     --main-font: "share tech mono", serif;
 }
 
-body {
+.modal-fullscreen .modal-content {
     background-color: #222233;
     background-image: -webkit-radial-gradient(center, circle cover, transparent 0%, #000 100%);
     background-image: -moz-radial-gradient(center, circle cover, transparent 0%, #000 100%);
@@ -16,9 +19,8 @@ body {
     transition: background-color .8s;
 }
 
-
 #color_selector {
-    max-width: 350px;
+    max-width: 450px;
     margin: 0 auto;
     position: absolute;
     height: auto;
@@ -65,8 +67,8 @@ p.subtitle {
 
 #color_selector li a {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 23px;
+    height: auto;
     border-radius: 50%;
     margin: 0 11px;
     text-indent: -9999px;
@@ -74,33 +76,50 @@ p.subtitle {
 }
 
 #color_selector li .blue {
-    background: rgba(25, 25, 208, 0.618);
+    background: rgba(9, 137, 235, 0.999);
+    box-shadow: 1px 1px 10px rgb(5, 107, 250);
     border: none;
 }
 
 #color_selector li .red {
-    background: rgba(215, 27, 27, 0.92);
+    background: rgba(244, 19, 19, 0.92);
+    box-shadow: 1px 1px 10px rgba(250, 5, 5, 0.642);
     border: none;
 }
 
 #color_selector li .green {
-    background: green;
+    background: rgb(15, 223, 15);
+    box-shadow: 1px 1px 10px rgba(5, 250, 50, 0.595);
     border: none;
 }
 
 #color_selector li .purple {
-    background: purple;
+    background: rgb(111, 44, 243);
+    box-shadow: 1px 1px 10px rgba(104, 38, 237, 0.623);
     border: none;
 }
 
 #color_selector li .yellow {
-    background: yellow;
+    background: rgb(254, 225, 6);
+    box-shadow: 1px 1px 10px rgba(238, 250, 5, 0.733);
     border: none;
 }
 
 #color_selector li .orange {
     background: rgb(255, 119, 0);
+    box-shadow: 1px 1px 10px rgba(250, 160, 5, 0.79);
     border: none;
+}
+
+#color_selector li .darksaber {
+    background: rgb(10, 10, 10);
+    box-shadow: 1px 1px 10px rgba(235, 239, 245, 0.739);
+    border: 1px solid #fafafa7a;
+}
+
+#color_selector li .white {
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgba(235, 239, 245, 0.739);
 }
 
 #color_selector ul~p {
@@ -129,15 +148,9 @@ p.subtitle {
 }
 
 .copy a {
-    color: #eee;
+    color: #fafafa;
     text-decoration: underline;
 }
-
-
-/*
- * == lightsaber Styles
- */
-
 
 #lightsaber {
     width: 50px;
@@ -145,19 +158,43 @@ p.subtitle {
     line-height: 0;
     padding: 20px;
     text-align: center;
+    transform: rotate(320deg);
 }
 
+#darksaber {
+    width: 50px;
+    margin: auto;
+    line-height: 0;
+    padding: 20px;
+    text-align: center;
+    transform: rotate(320deg);
+}
+
+#darksaber span,
 #lightsaber span {
     display: inline-block;
+}
+
+#dark {
+    position: relative;
+    width: 14px;
+    background: #000000;
+    height: 420px;
+    border-radius: 7px 7px 2px 2px;
+    box-shadow: 0 0 5px #7c7c7c, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px rgb(29, 29, 33)rgb(22, 22, 25)0 25px rgb(255, 255, 255);
+    z-index: 5;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s; 
 }
 
 #light {
     position: relative;
     width: 14px;
     background: #fff;
-    height: 520px;
+    height: 420px;
     border-radius: 7px 7px 2px 2px;
-    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px blue, 0 0 25px blue;
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px rgb(255, 255, 255), 0 0 25px rgba(255, 255, 255, 0.937);
     z-index: 5;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
@@ -292,7 +329,7 @@ p.subtitle {
     top: 0;
     bottom: -12px;
     right: 12px;
-    background: rgba(0, 0, 255, 0.05);
+    background: rgba(123, 123, 123, 0.552);
     box-shadow: 0 0 12px rgba(0, 0, 255, 0.2);
     -webkit-transition: all .8s;
     -moz-transition: all .8s;
@@ -364,10 +401,17 @@ p.subtitle {
 }
 
 #blue:target~#lightsaber #light {
-    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px blue, 0 0 25px blue;
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px rgb(0, 98, 255), 0 0 25px rgba(0, 0, 255, 0.937);
 }
 
 #blue:target~#color_selector .p_blue {
+    -webkit-transition: max-height .8s .8s;
+    -moz-transition: max-height .8s .8s;
+    transition: max-height .8s .8s;
+    max-height: 15em;
+}
+
+#white:target~#color_selector .p_white {
     -webkit-transition: max-height .8s .8s;
     -moz-transition: max-height .8s .8s;
     transition: max-height .8s .8s;
@@ -379,18 +423,24 @@ p.subtitle {
 }
 
 #blue:target~#lightsaber .light {
-    background: rgba(0, 0, 255, 0.05);
-    box-shadow: 0 0 12px rgba(0, 0, 255, 0.2);
+    background: rgba(21, 68, 208, 0.917);
+    box-shadow: 0 0 12px rgba(0, 60, 255, 0.929);
 }
 
-#blue:target~#bg {
-    background-color: #222233;
-}
 
 #blue:target~h1,
 #blue:target~h2 {
-    color: rgba(200, 200, 255, 0.5);
+    color: rgba(200, 200, 255, 0.914);
     text-shadow: 0 0 5px rgba(0, 0, 255, 0.487), 0 0 5px rgba(0, 0, 255, 0.491), 0 0 5px rgba(0, 0, 255, 0.58);
+}
+
+#white:target~#lightsaber .light {
+    background: rgba(242, 242, 248, 0.896);
+    box-shadow: 0 0 12px rgba(250, 250, 250, 0.797);
+}
+
+#blue:target~#bg {
+    background-color: #0d3be3;
 }
 
 #red:target~#lightsaber #light {
@@ -418,8 +468,6 @@ p.subtitle {
     color: rgba(255, 200, 200, 0.5);
     text-shadow: 0 0 5px red, 0 0 5px red, 0 0 5px red;
 }
-
-
 
 #orange:target~#lightsaber #light {
     box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px rgb(255, 162, 0), 0 0 25px rgb(255, 119, 0);
@@ -455,6 +503,27 @@ p.subtitle {
 }
 
 
+#orange:target~#lightsaber #light {
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px rgb(255, 162, 0), 0 0 25px rgb(255, 119, 0);
+}
+
+#orange:target~#color_selector .orange {
+    -webkit-transition: max-height .8s .8s;
+    -moz-transition: max-height .8s .8s;
+    transition: max-height .8s .8s;
+    color: rgb(255, 119, 0);
+}
+
+#orange:target~#lightsaber .light {
+    background: rgba(255, 0, 0, 0.05);
+    box-shadow: 0 0 12px rgb(255, 119, 0);
+}
+
+#orange:target~#bg {
+    background-color: #332222;
+}
+
+
 #green:target~#lightsaber #light {
     box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px green, 0 0 25px green;
 }
@@ -482,8 +551,8 @@ p.subtitle {
 }
 
 #purple:target~#lightsaber #light {
-    color: purple;
-    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px purple, 0 0 25px purple;
+    color: rgb(88 22 221);
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px rgb(88 22 221), 0 0 25px rgb(88 22 221);
 }
 
 #purple:target~#color_selector .p_purple {
@@ -494,8 +563,8 @@ p.subtitle {
 }
 
 #purple:target~#lightsaber .light {
-    background: rgba(255, 0, 255, 0.05);
-    box-shadow: 0 0 12px rgba(255, 0, 255, 0.2);
+    background: rgb(28 3 35 / 24%);
+    box-shadow: 0 0 12px rgb(88 22 221 / 83%);
 }
 
 #purple:target~#bg {
@@ -505,7 +574,55 @@ p.subtitle {
 #purple:target~h1,
 #purple:target~h2 {
     color: rgba(255, 200, 255, 0.5);
-    text-shadow: 0 0 5px purple, 0 0 5px purple, 0 0 5px purple;
+    text-shadow: 0 0 5px rgb(88 22 221), 0 0 5px rgb(88 22 221), 0 0 5px rgb(88 22 221);
+}
+
+
+#purple:target~#lightsaber #light {
+    color: rgb(88 22 221);
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px rgb(88 22 221), 0 0 25px rgb(88 22 221);
+}
+
+
+#darksaber:target~#darksaber #dark {
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 12px #000000e2, 0 0 8px #141414, 0 0 12px #141414, 0 0 15px rgb(255, 255, 255), 0 0 25px rgb(255, 255, 255);
+}
+
+#darksaber:target~#color_selector .darksaber {
+    -webkit-transition: max-height .8s .8s;
+    -moz-transition: max-height .8s .8s;
+    transition: max-height .8s .8s;
+    color: rgb(1, 0, 0);
+}
+
+#darksaber:target~#color_selector .p_darksaber {
+    -webkit-transition: max-height .8s .8s;
+    -moz-transition: max-height .8s .8s;
+    transition: max-height .8s .8s;
+    max-height: 15em;
+}
+
+#darksaber:target {
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.949);
+}
+
+#darksaber:target~#bg {
+    background: rgba(0, 0, 0, 0.817);
+}
+
+#darksaber:target~h1,
+#darksaber:target~h2 {
+    color: rgba(255, 255, 255, 0.997);
+    box-shadow: 0 0 5px #000000, 0 0 8px #141414, 0 0 12px #141414, 0 0 15px rgb(255, 255, 255), 0 0 25px rgb(255, 255, 255);
+}
+
+:target~#color_selector .p_ {
+    -webkit-transition: max-height .8s .8s;
+    -moz-transition: max-height .8s .8s;
+    transition: max-height .8s .8s;
+    max-height: 15em;
 }
 
 #yellow:target~#lightsaber #light {

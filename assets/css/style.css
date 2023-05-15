@@ -10,6 +10,7 @@
   --purple: #0e0428;
   --title: "star wars", serif;
   --main-font: "share tech mono", serif;
+  --black:var(--black)
 }
 
 h1,
@@ -23,6 +24,7 @@ h6 {
 
 body {
   font-family: var(--main-font);
+  /* background-color:var(--black) ; */
 }
 
 a.btn.btn-lg.btn-secondary {

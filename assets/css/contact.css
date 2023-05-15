@@ -12,7 +12,7 @@
 }
 
 .bg-purple{
-    background: linear-gradient(#220e5a38, #16052e70 43%, #0b090f91),url('../images/space.jpg');
+    background: linear-gradient(#220e5a38, #16052e70 43%, #0b090f91),url('../images/space.webp');
     background-repeat: repeat-x;
     background-size: cover;
     background-position: left top;

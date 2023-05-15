@@ -243,7 +243,7 @@ i.fas.fa-code {
 #game {
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(#15161694, #3a3e3e24 43%, #18181887),
+  background: linear-gradient(#0c021cc1, #15043b89, #0b0113b6),
     url("../images/game-bg.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
@@ -347,33 +347,32 @@ i.fas.fa-code {
 
 
 .redirect-to-play-game-image-btn-1 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(245, 246, 252, 0.586),
-      rgba(117, 26, 19, 0.73)
-    ),
-    url("../images/jedy-order-btn.jpg");
-  opacity: 0.1;
+  background-color: none;
+  background-image: url("../images/yoda.png");
+  background-size: contain;
+  width: 40px;
+  background-repeat: no-repeat;
+  opacity: 0.25;
 }
 
 .redirect-to-play-game-image-btn-2 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(245, 246, 252, 0.263),
-      rgba(19, 65, 117, 0.73)
-    ),
-    url("../images/new-republic-btn.jpg");
-  opacity: 0.2;
+  background-color: transparent;
+  background-image: url("../images/maul-cartoon.webp");
+  width: 50px;
+  background-size: contain;
+  height: 100px;
+  background-repeat: no-repeat;
+  opacity: 0.095;
 }
 
 .redirect-to-play-game-image-btn-3 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(245, 246, 252, 0.263),
-      rgba(50, 117, 19, 0.73)
-    ),
-    url("../images/galactic-senate-btn.jpg");
-  opacity: 0.2;
+  background-color: transparent;
+  background-image: url("../images/lightsaber.png");
+  width: 50px;
+  background-size: contain;
+  height: 100px;
+  background-repeat: no-repeat;
+  opacity: 0.045;
 }
 
 /* yoda game styles */

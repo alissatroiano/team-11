@@ -1,9 +1,9 @@
 # DeathScape
 
-### Use your Star Wars knowledge to escape the Death Star! In this star wars themed escape room game, you must find the hidden mini games and complete them to unlock the sealed door and lead the others to safety. Can you escape from the falling ship?
+### Use your Star Wars knowledge to escape the Death Star! In this star wars themed escape room game. Find the hidden mini-games, complete them all to unlock the sealed door and lead the others to safety. Can you escape from the falling ship?
 
 ### Deployed link
-[Click here to play!](https://www.example.com)
+[Click here to play!](https://alissatroiano.github.io/team-11/)
 
 ## TABLE OF CONTENTS
 | Section |
@@ -20,24 +20,30 @@
 | [Future Features](#future-features) |
 
 ## CONTROLS AND GAME RULES
+### How to play
+- Click the play button to start the game
+- Search the ship for mini games
+- Press on a mini game (hint, it will change colour when hovered over)
+- Complete the game to unlock 1 of the 3 padlocks above the door
+- Once all the padlocks above the door have changed colour, the door will open and you can escape
 
 ## TYPOGRAPHY
-- Ubuntu is the font used for the body with sans serif used as a fallback font.
-- The Ubuntu font has been selected as I feel as though it has a similar feel to the font used in the logo, whilst also remaining clear to read.
-- Different font weights have been used for various parts of the website.
-- Most of the content is white text and a dark background
+- The star wars font used for the title and headers
+- Share tech mono font used for body text
+- Dosis font used for navigation
+- Text colours and background colours are of the following: white text with black backgroun, yellow text with black background, black text with white background or black text with yellow background
 
 ## FEATURES
 - Header 
     - Contains the navigation links to change from page to page.
-- Footer
-    - Contains a sales pitch with a link to the enquire page, as well as the social media accounts of the business.
 - Team page
     - This page shows the team of individuals who collaborated together to make this game
 - Links
-    - Hovering over links will change its colour
+    - Hovering over links will change its colour slightly
 - Gameplay
-    - All mini games will be different and fun, while also relating to star wars.
+    - All mini games will be different and fun, while also relating to star wars
+- How to play
+    - Instructions to help users understand what they must do in order to complete the game
 
 ## UX/UI SECTION  
 ### Project Goals and Desgin choices:
@@ -53,21 +59,20 @@
 ### User Stories:
 - As a new user:  
     - I want to click on the logo and be taken to the home page.
-    - I want to click home and be taken to the home page.
     - I want to click how to play and be provided with instructions on how I play this game.
     - I want to click play and be taken to the game.
     - I want to click on the mini games and be taken to the mini games.
     - I want to click the linkedin and github links in the meet the team section and be taken to the individuals profile.
+    - I want the game to be fun
 
 - As a user into star wars:
-    - I want the game to be fun and realte as much as possible to stars wars
     - I want to feel as though I am playing a star wars themed escape room and not just a generic escape room
 
 ### Wireframes:
 | Page | screenshot | Page | screenshot | 
 | --- | --- | --- | --- |
-| Home page | ![wireframe - home](assets/images/wireframes-and-testing/home-wireframe.PNG) | Game page | ![wireframe - game](assets/images/wireframes-and-testing/game-wireframe.PNG) |
-| Meet the team page | ![wireframe - team](assets/images/wireframes-and-testing/team-wireframe.PNG) |  |  |
+| Home page | ![wireframe - home](docs/wireframes-and-testing/home-wireframe.PNG) | Game page | ![wireframe - game](docs/wireframes-and-testing/game-wireframe.PNG) |
+| Team page| ![wireframe - team](docs/wireframes-and-testing/team-wireframe.PNG) |     |     |
 
 ## TESTING
 [Testing can be found here](/testing.md)
@@ -96,11 +101,27 @@ Then follow the steps:
 
 ## CITATION OF SOURCES
 ### Media:
-- [Shutterstock]()
-
-### Content used in website: 
-- [404 Error Page](https://freefrontend.com/html-css-404-page-templates/)
+- [Yoda Image](https://imgbin.com/free-png/yoda)
+- [Darth Maul image](https://www.clipartmax.com/middle/m2i8A0d3G6m2d3G6_darth-maul-by-flower-in-torn-jeans-cartoon/)
+- [Whac-a-maul background image created by us using](https://openai.com/product/dall-e-2)
+- [Sand heap image](https://www.shutterstock.com/image-vector/heap-sand-isolated-1102885712)
 - [Lightsaber](https://codepen.io/alissatroiano/pen/zYmLvYr)
+
+### Content used in website or to help write code: 
+- [Inspiration for whac-a-maul mini-game](https://www.youtube.com/watch?v=RTb8icFiSfk&t=1958s)
+- [Font used in headings](https://www.cdnfonts.com/star-wars.font)
+- [Font used for body](https://fonts.google.com/specimen/Share+Tech+Mono?query=share&category=Monospace)
+- [Font used in nav](https://fonts.google.com/specimen/Dosis)
+- [Refreshing the mini-game location](https://stackoverflow.com/questions/61710933/random-image-position-when-refresh-page)
+- [Contact page](https://www.w3schools.com/howto/howto_css_cards.asp)
+- [404 Error Page](https://freefrontend.com/html-css-404-page-templates/)
 - [Lightsaber Content](https://screenrant.com/star-wars-lightsaber-color-meaning-canon/#darksaber-black-lightsaber)
 
 ## FUTURE FEATURES
+- Add extra rooms
+- Add extra mini-games
+- Add music to mini-games
+- Add multiplayer function
+- Add difficulty levels
+- Add leaderboards
+- Add mobile and tablet functionality

@@ -1,7 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/star-wars");
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500');
-
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500");
 
 :root {
   --danger-color: #d13443;
@@ -31,7 +30,6 @@ a.btn.btn-lg.btn-secondary {
 /* Hide scrollbar for Chrome, Safari and Opera */
 .index-body::-webkit-scrollbar {
   display: none;
-  height: 100vh;
   overflow: hidden;
 }
 
@@ -50,7 +48,11 @@ i.fas {
 a.nav-link:hover,
 .navbar li:hover,
 a:hover {
+<<<<<<< HEAD
     color: rgb(235, 197, 25);
+=======
+  color: rgb(235, 196, 23);
+>>>>>>> 2f0034ba94629eaec65e5a832123f4d353d13985
 }
 
 /* Navbar */
@@ -64,9 +66,15 @@ a:hover {
   text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 
 .bg-purple{
   background: linear-gradient(#220e5a38, #16052e70 43%, #0b090f91),url('../images/space.jpg');
+=======
+.bg-purple {
+  background: linear-gradient(#220e5a38, #16052e70 43%, #0b090f91),
+    url("../images/space.webp");
+>>>>>>> 2f0034ba94629eaec65e5a832123f4d353d13985
   background-repeat: repeat-x;
   background-size: cover;
   background-position: left top;
@@ -74,11 +82,22 @@ a:hover {
   overflow: hidden;
 }
 
+<<<<<<< HEAD
 
 /* contact page */
 
 .contact-page-bg-image{
   background:url("../images/space.jpg") no-repeat center center;
+=======
+a.nav-link,
+a.navbar li,
+.navbar li {
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  color: #fafafa;
+>>>>>>> 2f0034ba94629eaec65e5a832123f4d353d13985
 }
 
 .team_title{
@@ -87,13 +106,63 @@ a:hover {
   font-weight: 200;
 }
 
+<<<<<<< HEAD
 /* columns side by side */
 .profile-card {
   width: 20.3%;
   margin: 11px;
   padding: 1px 1px;
+=======
+.navbar-brand {
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 1.5px;
+}
+
+/* index star wars sw scroll */
+.sw-body {
+  color: var(--yellow);
+  font-family: sans-serif;
+  font-size: 5vw;
+  line-height: 1.3;
+  overflow: hidden;
+  height: 50vh;
+}
+
+.sw-container {
+  margin: 0 auto;
+  perspective: 400px;
+  perspective-origin: bottom;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  transform: scaleY(0.9);
+  z-index: -1000;
+}
+
+.sw-credits {
+  position: absolute;
+  top: 0;
+  left: 13%;
+  right: 13%;
+  height: 100%;
+  animation: play-scroll 60s forwards;
+}
+
+.sw-headings {
+  margin-bottom: 5rem;
+}
+
+#title {
+  font-size: 6rem;
+>>>>>>> 2f0034ba94629eaec65e5a832123f4d353d13985
   text-align: center;
 
+<<<<<<< HEAD
 }
 /* Display the columns below each other instead of side by side on small screens*/
 @media screen and (max-width: 650px) {
@@ -106,6 +175,119 @@ a:hover {
 /* Some left and right padding inside the page container */
 .page-container {
   padding: 2px 20px;
+=======
+#soundtrack {
+  display: none;
+}
+
+/* Standard syntax */
+@keyframes star-wars {
+  0% {
+    transform: scale(30, 30);
+  }
+  100% {
+    transform: scale(0, 0);
+  }
+}
+
+.sw-h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@keyframes play-scroll {
+  0% {
+    transform: rotateX(21deg) translate3d(0, 100rem, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(21deg) translate3d(0, -150rem, 0);
+    opacity: 0;
+  }
+}
+
+.cover {
+  background: linear-gradient(#151616c2, #2f303054 43%, #181818b8),
+    url("/assets/images/space.webp") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.btn.btn-play {
+  position: relative;
+  z-index: 200;
+  margin: 15px auto;
+  width: 100px;
+  padding: 10px 15px;
+  border: 1px solid var(--yellow);
+  border-radius: 100px;
+  font-weight: 400;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  margin-top: 50px;
+  font-family: var(--main-font);
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.btn.btn-play:hover {
+  background-color: #ffcb39;
+  color: var(--purple);
+  transform: scale(1.05);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.made-by {
+  font-size: 14px;
+  color: #f9f8ee;
+}
+
+i.fas.fa-code {
+  color: var(--yellow);
+}
+
+@media (max-width: 790px) {
+  #color_selector,
+  .copy {
+    position: relative;
+    width: auto;
+  }
+
+  #color_selector {
+    margin: 1em auto;
+    width: 80%;
+    right: 0;
+  }
+
+  .copy {
+    padding: 0;
+  }
+
+  #bg {
+    bottom: -59%;
+  }
+}
+
+/* Game page */
+#game {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(#0c021cc1, #15043b89, #0b0113b6),
+    url("../images/game-bg.webp") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  background-color: darkblue;
+>>>>>>> 2f0034ba94629eaec65e5a832123f4d353d13985
 }
 
 /* Some left and right padding inside the card container */
@@ -113,8 +295,296 @@ a:hover {
   padding: 1px 1px;
 }
 
+<<<<<<< HEAD
 /* Clear floats */
 .card-container::after, .row::after {
+=======
+.locked-door-light-1 {
+  position: absolute;
+  top: 90px;
+  left: 38%;
+}
+
+.locked-door-light-2 {
+  position: absolute;
+  top: 90px;
+  left: 46%;
+}
+
+.locked-door-light-3 {
+  position: absolute;
+  top: 90px;
+  left: 54%;
+}
+
+.game-container {
+  position: absolute;
+  inset: 0;
+}
+
+.game-grid {
+  height: 100%;
+  position: relative;
+  z-index: -1;
+  margin-top: 3em;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 600ms ease-in-out, z-index 900ms;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-grid > div {
+  overflow: hidden;
+}
+
+.game-grid.active {
+  grid-template-rows: 1fr;
+  z-index: 2;
+}
+
+.whac-a-maul-grid {
+  min-height: 100%;
+  position: relative;
+  z-index: -1;
+  margin-top: 3em;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: transform 600ms ease-in-out, z-index 900ms;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-500%);
+}
+
+.whac-a-maul-grid > div {
+  overflow: hidden;
+}
+
+.whac-a-maul-grid.active {
+  grid-template-rows: 1fr;
+  transition: transform 600ms ease-in-out, z-index 600ms;
+  z-index: 2;
+  transform: translateX(0);
+}
+
+.btn-image-header {
+  position: relative;
+}
+
+.redirect-to-play-game-image-btn:hover {
+  transform: scale(1.3);
+  transition-duration: 500ms;
+  opacity: 1;
+}
+
+.game-grid {
+  height: 100%;
+  position: relative;
+  z-index: -1;
+  margin-top: 3em;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 600ms ease-in-out, z-index 900ms;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-grid > div {
+  overflow: hidden;
+}
+
+.game-grid.active {
+  grid-template-rows: 1fr;
+  z-index: 2;
+}
+
+.end-game-grid {
+  min-height: 100%;
+  position: relative;
+  z-index: -1;
+  margin-top: 3em;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: transform 600ms ease-in-out, z-index 900ms;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(500%);
+}
+
+.end-game-grid > div {
+  overflow: hidden;
+}
+
+.end-game-grid.active {
+  grid-template-rows: 1fr;
+  transition: transform 600ms ease-in-out, z-index 600ms;
+  z-index: 2;
+  transform: translateX(0);
+}
+
+.end-game-content {
+  background-color: white;
+  min-height: 300px;
+  width: max-content;
+  padding-inline: 1em;
+  margin: auto;
+  font-size: 2rem;
+}
+
+/* End Game page */
+
+.redirect-to-play-game-image-btn {
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.redirect-to-play-game-image-btn-1 {
+  background-color: none;
+  background-image: url("../images/yoda.png");
+  background-size: contain;
+  width: 40px;
+  background-repeat: no-repeat;
+  opacity: 0.25;
+}
+
+.redirect-to-play-game-image-btn-2 {
+  background-color: transparent;
+  background-image: url("../images/maul-cartoon.webp");
+  width: 50px;
+  background-size: contain;
+  height: 100px;
+  background-repeat: no-repeat;
+  opacity: 0.095;
+}
+
+.redirect-to-play-game-image-btn-3 {
+  background-color: transparent;
+  background-image: url("../images/lightsaber.png");
+  width: 50px;
+  background-size: contain;
+  height: 100px;
+  background-repeat: no-repeat;
+  opacity: 0.235;
+}
+
+/* yoda game styles */
+.yoda-game {
+  max-width: 51rem;
+  border: 1px solid #252525;
+  border-radius: 35px;
+  background: linear-gradient(225deg, #ffffff, #efefef);
+  box-shadow: 5px 8px 28px #666666, 5px 2px 28px #ffffff;
+  margin: 4px;
+  text-align: center;
+}
+
+.yoda-wrong-words {
+  margin: 0 2.5rem;
+}
+
+.yoda-img {
+  height: 18rem;
+}
+
+#yoda-words-wrong {
+  overflow-wrap: anywhere;
+  padding: 1rem 0 1rem 0;
+}
+.yoda-submit {
+  border-radius: 10px;
+}
+
+.button-end-yoda-game {
+  display: none;
+}
+.button-end-yoda-game.finished {
+  display: block;
+}
+
+.saber-lock-change-color,
+.yoda-lock-change-color,
+.maul-lock-change-color {
+  color: var(--success-color);
+}
+
+.saber-close,
+.yoda-close,
+.maul-close,
+.end-game-close {
+  margin-left: 90%;
+  margin-top: 1em;
+  font-size: 1.5em;
+  border: 2px solid;
+  padding: 2px 4px;
+}
+
+/* Whack-a-maul maul whack styles */
+.whac-wrapper {
+  box-sizing: border-box;
+  border: 1px solid #252525;
+  border-radius: 35px;
+  background: linear-gradient(225deg, #ffffff, #efefef);
+  box-shadow: -5px 8px 28px #666666, 5px 2px 28px #ffffff;
+  min-height: 600px;
+  max-width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../images/tatooine.webp);
+  overflow: hidden;
+}
+
+.whac-title {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.whac-title h1 {
+  padding: 5px;
+}
+
+.whac-title p {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.whac-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whac-stats div,
+.whac-start button {
+  padding: 5px 20px;
+}
+
+.whac-game {
+  max-width: 600px;
+  max-height: 400px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.hole-wrapper {
+  height: 100%;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.hole {
+  min-height: 125px;
+  min-width: fit-content;
+  position: relative;
+  margin: 30px 0;
+}
+
+.hole:after {
+>>>>>>> 2f0034ba94629eaec65e5a832123f4d353d13985
   content: "";
   clear: both;
   display: table;
@@ -140,3 +610,86 @@ a:hover {
 
 /* End Contact page */
 
+<<<<<<< HEAD
+=======
+@media only screen and (min-width: 400px) {
+  .locked-door-light-1 {
+    left: 40%;
+  }
+
+  .locked-door-light-2 {
+    left: 47%;
+  }
+
+  .locked-door-light-3 {
+    left: 54%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .locked-door-light {
+    padding: 12px;
+  }
+
+  .locked-door-light-1 {
+    left: 42%;
+  }
+
+  .locked-door-light-2 {
+    left: 47%;
+  }
+
+  .locked-door-light-3 {
+    left: 52%;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .locked-door-light-1 {
+    left: 44%;
+  }
+
+  .locked-door-light-2 {
+    left: 48%;
+  }
+
+  .locked-door-light-3 {
+    left: 52%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .locked-door-light-1 {
+    left: 46%;
+  }
+
+  .locked-door-light-2 {
+    left: 49%;
+  }
+
+  .locked-door-light-3 {
+    left: 52%;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .locked-door-light {
+    padding: 13px;
+  }
+
+  .locked-door-light-1 {
+    top: 130px;
+    left: 47%;
+  }
+
+  .locked-door-light-2 {
+    top: 130px;
+    left: 49%;
+  }
+
+  .locked-door-light-3 {
+    top: 130px;
+    left: 51%;
+  }
+}
+>>>>>>> 2f0034ba94629eaec65e5a832123f4d353d13985

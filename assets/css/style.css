@@ -6,7 +6,8 @@
 :root {
   --danger-color: #d13443;
   --success-color: #20c997;
-
+  --yellow: #f9bf11;
+  --purple: #0e0428;
   --title: "star wars", serif;
   --main-font: "share tech mono", serif;
 }
@@ -43,8 +44,8 @@ a.btn.btn-lg.btn-secondary {
   /* Firefox */
 }
 
-i.fas {
-  color: rgb(235, 196, 23);
+i.fas.fa-rocket {
+  color: var(--yellow);
 }
 
 a.nav-link:hover,
@@ -55,18 +56,46 @@ a:hover {
 
 /* Navbar */
 .bg-main {
-  background-color: #151517;
+  background-color: none;
 }
 
-.navbar li,
+.bg-game {
+  background-color: #274d5ca8;
+}
+
+.bg-purple{
+  background: linear-gradient(#220e5a38, #16052e70 43%, #0b090f91),url('../images/space.jpg');
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: left top;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+a.nav-link,
+a.navbar li,
+.navbar li {
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  color: #fafafa;
+}
+
+.navbar li:hover {
+  color: var(--yellow);
+}
+
 .navbar-brand {
   font-family: 'Dosis', sans-serif;
   text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 1.5px;
 }
 
 /* index star wars sw scroll */
 .sw-body {
-  color: #ffbe00;
+  color: var(--yellow);
   font-family: sans-serif;
   font-size: 5vw;
   line-height: 1.3;
@@ -101,9 +130,25 @@ a:hover {
   margin-bottom: 5rem;
 }
 
-.sw-h1 {
-  font-size: 2.5rem;
+#title {
+  font-size: 6rem;
   text-align: center;
+  color: var(--yellow);
+  animation-name: star-wars;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+}
+
+#soundtrack { display: none }
+
+/* Standard syntax */
+@keyframes star-wars {
+0% {
+  transform: scale(30,30)
+}
+100% {
+  transform: scale(0,0);
+}
 }
 
 .sw-h2 {
@@ -132,6 +177,46 @@ a:hover {
   overflow: hidden;
 }
 
+.btn.btn-play {
+    position: relative;
+    z-index: 200;
+    margin: 15px auto;
+    width: 100px;
+    padding: 10px 15px;
+    border: 1px solid var(--yellow);
+    border-radius: 100px;
+    font-weight: 400;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing : 2px;
+    font-size: 1rem;
+    margin-top: 50px;
+    font-family: var(--main-font);
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.btn.btn-play:hover{
+    background-color: #FFCB39;
+    color: var(--purple);
+    transform: scale(1.05);
+    box-shadow: 0px 20px 20px rgba(0,0,0,0.1);
+}
+
+.made-by {
+  font-size: 14px;
+  color: #f9f8ee;
+}
+
+i.fas.fa-code {
+  color: var(--yellow);
+}
+
 @media (max-width: 790px) {
   #color_selector,
   .copy {
@@ -158,7 +243,7 @@ a:hover {
 #game {
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(#15161694, #3a3e3e24 43%, #18181887),
+  background: linear-gradient(#0c021cc1, #15043b89, #0b0113b6),
     url("../images/game-bg.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
@@ -189,86 +274,6 @@ a:hover {
   left: 54%;
 }
 
-@media only screen and (min-width: 400px) {
-  .locked-door-light-1 {
-    left: 40%;
-  }
-
-  .locked-door-light-2 {
-    left: 47%;
-  }
-
-  .locked-door-light-3 {
-    left: 54%;
-  }
-}
-
-@media only screen and (min-width: 500px) {
-  .locked-door-light {
-    padding: 12px;
-  }
-
-  .locked-door-light-1 {
-    left: 42%;
-  }
-
-  .locked-door-light-2 {
-    left: 47%;
-  }
-
-  .locked-door-light-3 {
-    left: 52%;
-  }
-}
-
-@media only screen and (min-width: 650px) {
-  .locked-door-light-1 {
-    left: 44%;
-  }
-
-  .locked-door-light-2 {
-    left: 48%;
-  }
-
-  .locked-door-light-3 {
-    left: 52%;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .locked-door-light-1 {
-    left: 46%;
-  }
-
-  .locked-door-light-2 {
-    left: 49%;
-  }
-
-  .locked-door-light-3 {
-    left: 52%;
-  }
-}
-
-@media only screen and (min-width: 1250px) {
-  .locked-door-light {
-    padding: 13px;
-  }
-
-  .locked-door-light-1 {
-    top: 130px;
-    left: 47%;
-  }
-
-  .locked-door-light-2 {
-    top: 130px;
-    left: 49%;
-  }
-
-  .locked-door-light-3 {
-    top: 130px;
-    left: 51%;
-  }
-}
 .game-container {
   position: absolute;
   inset: 0;
@@ -342,33 +347,32 @@ a:hover {
 
 
 .redirect-to-play-game-image-btn-1 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(245, 246, 252, 0.586),
-      rgba(117, 26, 19, 0.73)
-    ),
-    url("../images/jedy-order-btn.jpg");
-  opacity: 0.1;
+  background-color: none;
+  background-image: url("../images/yoda.png");
+  background-size: contain;
+  width: 40px;
+  background-repeat: no-repeat;
+  opacity: 0.25;
 }
 
 .redirect-to-play-game-image-btn-2 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(245, 246, 252, 0.263),
-      rgba(19, 65, 117, 0.73)
-    ),
-    url("../images/new-republic-btn.jpg");
-  opacity: 0.2;
+  background-color: transparent;
+  background-image: url("../images/maul-cartoon.webp");
+  width: 50px;
+  background-size: contain;
+  height: 100px;
+  background-repeat: no-repeat;
+  opacity: 0.095;
 }
 
 .redirect-to-play-game-image-btn-3 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(245, 246, 252, 0.263),
-      rgba(50, 117, 19, 0.73)
-    ),
-    url("../images/galactic-senate-btn.jpg");
-  opacity: 0.2;
+  background-color: transparent;
+  background-image: url("../images/lightsaber.png");
+  width: 50px;
+  background-size: contain;
+  height: 100px;
+  background-repeat: no-repeat;
+  opacity: .235;
 }
 
 /* yoda game styles */
@@ -405,11 +409,13 @@ a:hover {
   display: block;
 }
 
+.saber-lock-change-color,
 .yoda-lock-change-color,
 .maul-lock-change-color {
   color: var(--success-color);
 }
 
+.saber-close,
 .yoda-close,
 .maul-close {
   margin-left: 90%;
@@ -562,63 +568,84 @@ a:hover {
   padding-bottom: 10px;
 }
 
-/* contact page */
 
-.contact-page-bg-image{
-  background:url("../images/space.jpg") no-repeat center center  ;
+@media only screen and (min-width: 400px) {
+  .locked-door-light-1 {
+    left: 40%;
+  }
 
-}
-.team_title{
-  color:beige;
-}
-/* columns side by side */
-.profile-card {
-  width: 20.3%;
-  margin: 10px;
-  padding: 10px 5px;
-  text-align: center;
-}
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-  .profile-card {
-    width: 100%;
-    display: block;
+  .locked-door-light-2 {
+    left: 47%;
+  }
+
+  .locked-door-light-3 {
+    left: 54%;
   }
 }
 
+@media only screen and (min-width: 500px) {
+  .locked-door-light {
+    padding: 12px;
+  }
 
-/* Some left and right padding inside the container */
-.container {
-  padding: 15px 10px;
+  .locked-door-light-1 {
+    left: 42%;
+  }
+
+  .locked-door-light-2 {
+    left: 47%;
+  }
+
+  .locked-door-light-3 {
+    left: 52%;
+  }
 }
 
-/* Clear floats */
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
+@media only screen and (min-width: 650px) {
+  .locked-door-light-1 {
+    left: 44%;
+  }
+
+  .locked-door-light-2 {
+    left: 48%;
+  }
+
+  .locked-door-light-3 {
+    left: 52%;
+  }
 }
 
-.title {
-  color: grey;
+@media only screen and (min-width: 900px) {
+  .locked-door-light-1 {
+    left: 46%;
+  }
+
+  .locked-door-light-2 {
+    left: 49%;
+  }
+
+  .locked-door-light-3 {
+    left: 52%;
+  }
 }
 
-a {
-  text-decoration: none;
-  font-size: 20px;
-  color: black;
-  padding: 2px 13px;
-  text-align: center;
-  margin: 2px;
+@media only screen and (min-width: 1250px) {
+  .locked-door-light {
+    padding: 13px;
+  }
+
+  .locked-door-light-1 {
+    top: 130px;
+    left: 47%;
+  }
+
+  .locked-door-light-2 {
+    top: 130px;
+    left: 49%;
+  }
+
+  .locked-door-light-3 {
+    top: 130px;
+    left: 51%;
+  }
 }
-
-a:hover {
-  opacity: 0.7;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-/* End Contact page */
-

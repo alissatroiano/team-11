@@ -67,7 +67,7 @@ p.subtitle {
 
 #color_selector li a {
     display: inline-block;
-    width: 10px;
+    width: 23px;
     height: auto;
     border-radius: 50%;
     margin: 0 11px;
@@ -91,7 +91,7 @@ p.subtitle {
 }
 
 #color_selector li .purple {
-    background: purple;
+    background: rgb(88 22 221);
     border: none;
 }
 
@@ -107,7 +107,7 @@ p.subtitle {
 
 #color_selector li .darksaber {
     background: rgb(10, 10, 10);
-    border: #fafafa;
+    border: 1px solid #fafafa7a;
 }
 
 #color_selector ul~p {
@@ -136,9 +136,10 @@ p.subtitle {
 }
 
 .copy a {
-    color: #eee;
+    color: #fafafa;
     text-decoration: underline;
 }
+
 
 #lightsaber {
     width: 50px;
@@ -149,15 +150,40 @@ p.subtitle {
     transform: rotate(320deg);
 }
 
+
+#darksaber {
+    width: 50px;
+    margin: auto;
+    line-height: 0;
+    padding: 20px;
+    text-align: center;
+    transform: rotate(320deg);
+}
+
+
+#darksaber span,
 #lightsaber span {
     display: inline-block;
+}
+
+#dark {
+    position: relative;
+    width: 14px;
+    background: #000000;
+    height: 420px;
+    border-radius: 7px 7px 2px 2px;
+    box-shadow: 0 0 5px #7c7c7c, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px rgb(29, 29, 33)rgb(22, 22, 25)0 25px rgb(255, 255, 255);
+    z-index: 5;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s; 
 }
 
 #light {
     position: relative;
     width: 14px;
     background: #fff;
-    height: 520px;
+    height: 420px;
     border-radius: 7px 7px 2px 2px;
     box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px blue, 0 0 25px blue;
     z-index: 5;
@@ -294,7 +320,7 @@ p.subtitle {
     top: 0;
     bottom: -12px;
     right: 12px;
-    background: rgba(0, 0, 255, 0.05);
+    background: rgba(123, 123, 123, 0.552);
     box-shadow: 0 0 12px rgba(0, 0, 255, 0.2);
     -webkit-transition: all .8s;
     -moz-transition: all .8s;
@@ -482,8 +508,8 @@ p.subtitle {
 }
 
 #purple:target~#lightsaber #light {
-    color: purple;
-    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px purple, 0 0 25px purple;
+    color: rgb(88 22 221);
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px rgb(88 22 221), 0 0 25px rgb(88 22 221);
 }
 
 #purple:target~#color_selector .p_purple {
@@ -494,8 +520,8 @@ p.subtitle {
 }
 
 #purple:target~#lightsaber .light {
-    background: rgba(255, 0, 255, 0.05);
-    box-shadow: 0 0 12px rgba(255, 0, 255, 0.2);
+    background: rgb(28 3 35 / 24%);
+    box-shadow: 0 0 12px rgb(88 22 221 / 83%);
 }
 
 #purple:target~#bg {
@@ -505,19 +531,19 @@ p.subtitle {
 #purple:target~h1,
 #purple:target~h2 {
     color: rgba(255, 200, 255, 0.5);
-    text-shadow: 0 0 5px purple, 0 0 5px purple, 0 0 5px purple;
+    text-shadow: 0 0 5px rgb(88 22 221), 0 0 5px rgb(88 22 221), 0 0 5px rgb(88 22 221);
 }
 
 
 #purple:target~#lightsaber #light {
-    color: purple;
-    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px purple, 0 0 25px purple;
+    color: rgb(88 22 221);
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px rgb(88 22 221), 0 0 25px rgb(88 22 221);
 }
 
 
-#darksaber:target~#lightsaber #light {
-    color: #000;
-    box-shadow: 0 0 5px #9696964e, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px rgb(26, 26, 26), 0 0 25px rgb(33, 33, 33);
+#darksaber:target~#darksaber #dark {
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 12px #000000e2, 0 0 8px #141414, 0 0 12px #141414, 0 0 15px rgb(255, 255, 255), 0 0 25px rgb(255, 255, 255);
 }
 
 #darksaber:target~#color_selector .darksaber {
@@ -534,19 +560,19 @@ p.subtitle {
     max-height: 15em;
 }
 
-#darksaber:target~#lightsaber .light {
-    background: rgba(6, 6, 6, 0.878);
-    box-shadow: 0 0 12px rgba(225, 217, 225, 0.69);
+#darksaber:target {
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.949);
 }
 
 #darksaber:target~#bg {
-    background: rgba(0, 0, 0, 0.878);
+    background: rgba(0, 0, 0, 0.817);
 }
 
 #darksaber:target~h1,
 #darksaber:target~h2 {
-    color: rgba(1, 1, 1, 0.997);
-    text-shadow: 0 0 5px rgb(210, 195, 210), 0 0 5px rgb(224, 212, 224), 0 0 5px rgb(234, 226, 234);
+    color: rgba(255, 255, 255, 0.997);
+    box-shadow: 0 0 5px #000000, 0 0 8px #141414, 0 0 12px #141414, 0 0 15px rgb(255, 255, 255), 0 0 25px rgb(255, 255, 255);
 }
 
 :target~#color_selector .p_ {
@@ -555,22 +581,6 @@ p.subtitle {
     transition: max-height .8s .8s;
     max-height: 15em;
 }
-
-#darksaber:target~#lightsaber .light {
-    background: rgba(6, 6, 6, 0.878);
-    box-shadow: 0 0 12px rgba(225, 217, 225, 0.69);
-}
-
-#darksaber:target~#bg {
-    background: rgba(6, 6, 6, 0.878);
-}
-
-#darksaber:target~h1,
-#darksaber:target~h2 {
-    color: rgba(1, 1, 1, 0.997);
-    text-shadow: 0 0 5px rgb(210, 195, 210), 0 0 5px rgb(224, 212, 224), 0 0 5px rgb(234, 226, 234);
-}
-
 
 #yellow:target~#lightsaber #light {
     box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px yellow, 0 0 25px yellow;

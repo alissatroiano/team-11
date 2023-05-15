@@ -76,38 +76,50 @@ p.subtitle {
 }
 
 #color_selector li .blue {
-    background: rgba(25, 25, 208, 0.618);
+    background: rgba(9, 137, 235, 0.999);
+    box-shadow: 1px 1px 10px rgb(5, 107, 250);
     border: none;
 }
 
 #color_selector li .red {
-    background: rgba(215, 27, 27, 0.92);
+    background: rgba(244, 19, 19, 0.92);
+    box-shadow: 1px 1px 10px rgba(250, 5, 5, 0.642);
     border: none;
 }
 
 #color_selector li .green {
-    background: green;
+    background: rgb(15, 223, 15);
+    box-shadow: 1px 1px 10px rgba(5, 250, 50, 0.595);
     border: none;
 }
 
 #color_selector li .purple {
-    background: rgb(88 22 221);
+    background: rgb(111, 44, 243);
+    box-shadow: 1px 1px 10px rgba(104, 38, 237, 0.623);
     border: none;
 }
 
 #color_selector li .yellow {
-    background: yellow;
+    background: rgb(254, 225, 6);
+    box-shadow: 1px 1px 10px rgba(238, 250, 5, 0.733);
     border: none;
 }
 
 #color_selector li .orange {
     background: rgb(255, 119, 0);
+    box-shadow: 1px 1px 10px rgba(250, 160, 5, 0.79);
     border: none;
 }
 
 #color_selector li .darksaber {
     background: rgb(10, 10, 10);
+    box-shadow: 1px 1px 10px rgba(235, 239, 245, 0.739);
     border: 1px solid #fafafa7a;
+}
+
+#color_selector li .white {
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgba(235, 239, 245, 0.739);
 }
 
 #color_selector ul~p {
@@ -140,7 +152,6 @@ p.subtitle {
     text-decoration: underline;
 }
 
-
 #lightsaber {
     width: 50px;
     margin: auto;
@@ -150,7 +161,6 @@ p.subtitle {
     transform: rotate(320deg);
 }
 
-
 #darksaber {
     width: 50px;
     margin: auto;
@@ -159,7 +169,6 @@ p.subtitle {
     text-align: center;
     transform: rotate(320deg);
 }
-
 
 #darksaber span,
 #lightsaber span {
@@ -185,7 +194,7 @@ p.subtitle {
     background: #fff;
     height: 420px;
     border-radius: 7px 7px 2px 2px;
-    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px blue, 0 0 25px blue;
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px rgb(255, 255, 255), 0 0 25px rgba(255, 255, 255, 0.937);
     z-index: 5;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
@@ -392,10 +401,17 @@ p.subtitle {
 }
 
 #blue:target~#lightsaber #light {
-    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px blue, 0 0 25px blue;
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px rgb(0, 98, 255), 0 0 25px rgba(0, 0, 255, 0.937);
 }
 
 #blue:target~#color_selector .p_blue {
+    -webkit-transition: max-height .8s .8s;
+    -moz-transition: max-height .8s .8s;
+    transition: max-height .8s .8s;
+    max-height: 15em;
+}
+
+#white:target~#color_selector .p_white {
     -webkit-transition: max-height .8s .8s;
     -moz-transition: max-height .8s .8s;
     transition: max-height .8s .8s;
@@ -407,18 +423,24 @@ p.subtitle {
 }
 
 #blue:target~#lightsaber .light {
-    background: rgba(0, 0, 255, 0.05);
-    box-shadow: 0 0 12px rgba(0, 0, 255, 0.2);
+    background: rgba(21, 68, 208, 0.917);
+    box-shadow: 0 0 12px rgba(0, 60, 255, 0.929);
 }
 
-#blue:target~#bg {
-    background-color: #222233;
-}
 
 #blue:target~h1,
 #blue:target~h2 {
-    color: rgba(200, 200, 255, 0.5);
+    color: rgba(200, 200, 255, 0.914);
     text-shadow: 0 0 5px rgba(0, 0, 255, 0.487), 0 0 5px rgba(0, 0, 255, 0.491), 0 0 5px rgba(0, 0, 255, 0.58);
+}
+
+#white:target~#lightsaber .light {
+    background: rgba(242, 242, 248, 0.896);
+    box-shadow: 0 0 12px rgba(250, 250, 250, 0.797);
+}
+
+#blue:target~#bg {
+    background-color: #0d3be3;
 }
 
 #red:target~#lightsaber #light {
@@ -478,6 +500,27 @@ p.subtitle {
     -moz-transition: max-height .8s .8s;
     transition: max-height .8s .8s;
     max-height: 15em;
+}
+
+
+#orange:target~#lightsaber #light {
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px rgb(255, 162, 0), 0 0 25px rgb(255, 119, 0);
+}
+
+#orange:target~#color_selector .orange {
+    -webkit-transition: max-height .8s .8s;
+    -moz-transition: max-height .8s .8s;
+    transition: max-height .8s .8s;
+    color: rgb(255, 119, 0);
+}
+
+#orange:target~#lightsaber .light {
+    background: rgba(255, 0, 0, 0.05);
+    box-shadow: 0 0 12px rgb(255, 119, 0);
+}
+
+#orange:target~#bg {
+    background-color: #332222;
 }
 
 

@@ -20,6 +20,12 @@
 | [Future Features](#future-features) |
 
 ## CONTROLS AND GAME RULES
+### How to play
+- Click the play button to start the game
+- Search the ship for mini games
+- Press on a mini game (hint, it will change colour when hovered over)
+- Complete the game to unlock 1 of the 3 padlocks above the door
+- Once all the padlocks above the door have changed colour, the door will open and you can escape
 
 ## TYPOGRAPHY
 - The star wars font and share tech mono font has been selected.

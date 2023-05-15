@@ -23,6 +23,12 @@ const onloadFunction = () => {
   }
 };
 
+// scores for end game
+let gamePageScores = 0;
+
+endGameGrid = document.querySelector(".end-game-grid");
+endGameCloseBtn = document.querySelector(".end-game-close");
+
 // toggles claslist to dispaly content in animation for yoda words game
 
 yodaGameSpan = document.querySelector(".redirect-to-play-game-image-btn-1");
@@ -68,6 +74,16 @@ button.addEventListener("click", () => {
 btnFinishYoda.addEventListener("click", () => {
   yodaFinishedLock.classList.toggle("yoda-lock-change-color");
   yodaGrid.classList.toggle("active");
+  gamePageScores++;
+  // end game game over
+
+  if (gamePageScores === 3) {
+    endGameGrid.classList.add("active");
+    console.log("testing grid");
+    endGameCloseBtn.addEventListener("click", () => {
+      window.location.href = "game.html";
+    });
+  }
 });
 
 yodacloseicon.addEventListener("click", () => {
@@ -95,6 +111,16 @@ maulBtnClose.addEventListener("click", () => {
 maulBtnEndGamePass.addEventListener("click", () => {
   maulLockIcon.classList.toggle("maul-lock-change-color");
   maulGrid.classList.toggle("active");
+  gamePageScores++;
+  // end game game over
+
+  if (gamePageScores === 3) {
+    endGameGrid.classList.add("active");
+    console.log("testing grid");
+    endGameCloseBtn.addEventListener("click", () => {
+      window.location.href = "game.html";
+    });
+  }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -212,10 +238,19 @@ function endGame(scoreDisplay) {
 }
 
 // lightsaber game
-const saberFinishedLock = document.querySelector(".saber-lock-change-color");
-const lightSaberLock = document.querySelector(".lightsaber-lock");
-const saberBtn = document.getElementById('#closeBtn');
+lightsaberLight = document.querySelector(".locked-door-light-3");
+lightsaberEndGame = document.querySelector(".lightsaber-btn-close");
 
-saberBtn.addEventListener('click', function onClick() {
-  lightSaberLock.classList.toggle(".saber-lock-change-color");
+lightsaberEndGame.addEventListener("click", () => {
+  lightsaberLight.classList.toggle("saber-lock-change-color");
+  gamePageScores++;
+  // end game game over
+
+  if (gamePageScores === 3) {
+    endGameGrid.classList.add("active");
+    console.log("testing grid");
+    endGameCloseBtn.addEventListener("click", () => {
+      window.location.href = "game.html";
+    });
+  }
 });

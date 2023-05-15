@@ -39,7 +39,7 @@
 - Links
     - Hovering over links will change its colour
 - Gameplay
-    - All mini games will be different and fun, while also relating to star wars.
+    - All mini games will be different and fun, while also relating to star wars
 
 ## UX/UI SECTION  
 ### Project Goals and Desgin choices:

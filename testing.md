@@ -14,8 +14,10 @@
 | [Features Test](#features-test) |
 
 ## Typography test
-| Text colour and background colour | Screenshot |
-| --- | --- |
+Typography colour validator used: [https://webaim.org/resources/contrastchecker/]
+
+White font and black backgound = Contrast ratio 21:1 Passed
+Black font and white background = Contrast ratio 21:1 Passed
 
 ## Responsiveness test
 All pages and the content within them have been designed with a mobile-first approach and made to be fully responsive on all devices.
@@ -33,7 +35,6 @@ Tests have been done through the use of DevTools on the browser.
 | All Images Responsiveness | Good | Good | Good | Good | Good |
 | All Text Responsiveness | Good | Good | Good | Good | Good |
 | Gameplay Responsiveness | Good | Good | Good | Good | Good |
-| Footer Responsiveness | Good | Good | Good | Good | Good |
 
 ### iPhone 6 - (XS Device):
 | Page | Screenshots |
@@ -86,3 +87,8 @@ CSS validator used: [https://jigsaw.w3.org/css-validator/]
 ## Features test
 | Feature | Expect | Action | Result |
 | --- | --- | --- | --- |
+| Header navigation links | I expect all the navigation links to work as intended | I press on each navigation link | All links take me to the intended page or display the game rules - Success |
+| Team page profiles | I expect this page to show the team of individuals who collaborated together to make this game/project | I press meet the team in the navigation | All team members are shown |
+| Team page links | I expect all individual profile links to take me to their respective github and linkedin accounts | I press on the individuals github and linkedin links | The links take me to their respective profile pages |
+| Links | Hovering over links will change its colour slightly | I hover over links | The colour changes ever so slightly |
+| Gameplay | All mini games to function as intended | I play the mini games | The are no faults or errors |

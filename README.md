@@ -20,24 +20,26 @@
 | [Future Features](#future-features) |
 
 ## CONTROLS AND GAME RULES
+### How to play
+- Click the play button to start the game
+- Search the ship for mini games
+- Press on a mini game (hint, it will change colour when hovered over)
+- Complete the game to unlock 1 of the 3 padlocks above the door
+- Once all the padlocks above the door have changed colour, the door will open and you can escape
 
 ## TYPOGRAPHY
-- Ubuntu is the font used for the body with sans serif used as a fallback font.
-- The Ubuntu font has been selected as I feel as though it has a similar feel to the font used in the logo, whilst also remaining clear to read.
-- Different font weights have been used for various parts of the website.
-- Most of the content is white text and a dark background
+- The star wars font and share tech mono font has been selected.
+- Most of the content is white text and a dark background or black with a white background.
 
 ## FEATURES
 - Header 
     - Contains the navigation links to change from page to page.
-- Footer
-    - Contains a sales pitch with a link to the enquire page, as well as the social media accounts of the business.
 - Team page
     - This page shows the team of individuals who collaborated together to make this game
 - Links
     - Hovering over links will change its colour
 - Gameplay
-    - All mini games will be different and fun, while also relating to star wars.
+    - All mini games will be different and fun, while also relating to star wars
 
 ## UX/UI SECTION  
 ### Project Goals and Desgin choices:

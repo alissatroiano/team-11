@@ -63,7 +63,7 @@ a:hover {
 
 .bg-purple {
   background: linear-gradient(#220e5a38, #16052e70 43%, #0b090f91),
-    url("../images/space.jpg");
+    url("../images/space.webp");
   background-repeat: repeat-x;
   background-size: cover;
   background-position: left top;
@@ -172,7 +172,7 @@ a.navbar li,
 
 .cover {
   background: linear-gradient(#151616c2, #2f303054 43%, #181818b8),
-    url("/assets/images/space.jpg") no-repeat center center;
+    url("/assets/images/space.webp") no-repeat center center;
   background-size: cover;
   height: 100vh;
   overflow: hidden;
@@ -245,7 +245,7 @@ i.fas.fa-code {
   height: 100vh;
   overflow: hidden;
   background: linear-gradient(#0c021cc1, #15043b89, #0b0113b6),
-    url("../images/game-bg.jpg") no-repeat center center;
+    url("../images/game-bg.webp") no-repeat center center;
   background-size: cover;
   position: relative;
   background-color: darkblue;

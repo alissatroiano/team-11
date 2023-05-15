@@ -105,6 +105,11 @@ p.subtitle {
     border: none;
 }
 
+#color_selector li .darksaber {
+    background: rgb(10, 10, 10);
+    border: #fafafa;
+}
+
 #color_selector ul~p {
     overflow: hidden;
     height: auto;
@@ -416,8 +421,6 @@ p.subtitle {
     text-shadow: 0 0 5px red, 0 0 5px red, 0 0 5px red;
 }
 
-
-
 #orange:target~#lightsaber #light {
     box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px rgb(255, 162, 0), 0 0 25px rgb(255, 119, 0);
 }
@@ -505,6 +508,70 @@ p.subtitle {
     text-shadow: 0 0 5px purple, 0 0 5px purple, 0 0 5px purple;
 }
 
+
+#purple:target~#lightsaber #light {
+    color: purple;
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px purple, 0 0 25px purple;
+}
+
+
+#darksaber:target~#lightsaber #light {
+    color: #000;
+    box-shadow: 0 0 5px #9696964e, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px rgb(26, 26, 26), 0 0 25px rgb(33, 33, 33);
+}
+
+#darksaber:target~#color_selector .darksaber {
+    -webkit-transition: max-height .8s .8s;
+    -moz-transition: max-height .8s .8s;
+    transition: max-height .8s .8s;
+    color: rgb(1, 0, 0);
+}
+
+#darksaber:target~#color_selector .p_darksaber {
+    -webkit-transition: max-height .8s .8s;
+    -moz-transition: max-height .8s .8s;
+    transition: max-height .8s .8s;
+    max-height: 15em;
+}
+
+#darksaber:target~#lightsaber .light {
+    background: rgba(6, 6, 6, 0.878);
+    box-shadow: 0 0 12px rgba(225, 217, 225, 0.69);
+}
+
+#darksaber:target~#bg {
+    background: rgba(0, 0, 0, 0.878);
+}
+
+#darksaber:target~h1,
+#darksaber:target~h2 {
+    color: rgba(1, 1, 1, 0.997);
+    text-shadow: 0 0 5px rgb(210, 195, 210), 0 0 5px rgb(224, 212, 224), 0 0 5px rgb(234, 226, 234);
+}
+
+:target~#color_selector .p_ {
+    -webkit-transition: max-height .8s .8s;
+    -moz-transition: max-height .8s .8s;
+    transition: max-height .8s .8s;
+    max-height: 15em;
+}
+
+#darksaber:target~#lightsaber .light {
+    background: rgba(6, 6, 6, 0.878);
+    box-shadow: 0 0 12px rgba(225, 217, 225, 0.69);
+}
+
+#darksaber:target~#bg {
+    background: rgba(6, 6, 6, 0.878);
+}
+
+#darksaber:target~h1,
+#darksaber:target~h2 {
+    color: rgba(1, 1, 1, 0.997);
+    text-shadow: 0 0 5px rgb(210, 195, 210), 0 0 5px rgb(224, 212, 224), 0 0 5px rgb(234, 226, 234);
+}
+
+
 #yellow:target~#lightsaber #light {
     box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px yellow, 0 0 25px yellow;
 }
@@ -560,10 +627,4 @@ p.subtitle {
     #bg {
         bottom: -59%;
     }
-}
-
-a#close {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #fafafa;
 }

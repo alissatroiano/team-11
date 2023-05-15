@@ -43,7 +43,7 @@ a.btn.btn-lg.btn-secondary {
   /* Firefox */
 }
 
-i.fas {
+i.fas.fa-rocket {
   color: rgb(235, 196, 23);
 }
 
@@ -55,13 +55,42 @@ a:hover {
 
 /* Navbar */
 .bg-main {
-  background-color: #151517;
+  background-color: none;
 }
 
-.navbar li,
+.bg-game {
+  background-color: #274d5ca8;
+}
+
+
+.bg-purple{
+  background: linear-gradient(#220e5a38, #16052e70 43%, #0b090f91),url('../images/space.jpg');
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: left top;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+a.nav-link,
+a.navbar li,
+.navbar li {
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  color: #fafafa;
+}
+
+.navbar li:hover {
+  color: #ffbe00;
+}
+
 .navbar-brand {
   font-family: 'Dosis', sans-serif;
   text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 1.5px;
 }
 
 /* index star wars sw scroll */
@@ -563,67 +592,3 @@ a:hover {
   width: auto;
   padding-bottom: 10px;
 }
-
-/* contact page */
-
-.contact-page-bg-image{
-  background:url("../images/space.jpg") no-repeat center center;
-  background-size: cover;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.team_title{
-  color:beige;
-}
-/* columns side by side */
-.profile-card {
-  width: 20.3%;
-  margin: 10px;
-  padding: 10px 5px;
-  text-align: center;
-}
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-  .profile-card {
-    width: 100%;
-    display: block;
-  }
-}
-
-
-/* Some left and right padding inside the container */
-.container {
-  padding: 15px 10px;
-}
-
-/* Clear floats */
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-a {
-  text-decoration: none;
-  font-size: 20px;
-  color: black;
-  padding: 2px 13px;
-  text-align: center;
-  margin: 2px;
-}
-
-a:hover {
-  opacity: 0.7;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-/* End Contact page */
-

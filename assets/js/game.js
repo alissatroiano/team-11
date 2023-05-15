@@ -1,3 +1,16 @@
+window.onload = function () {
+  let howToModal = document.getElementById("howToPlayModal");
+  howToModal.style.display = "block";
+};
+
+let closeHowToPlayModalBtn = document.getElementById("closeHowToPlayBtn");
+let closeHowToPlayModalPage = document.getElementById("howToPlayModal");
+closeHowToPlayModalBtn.addEventListener("click", () => {
+  window.setTimeout(() => {
+    closeHowToPlayModalPage.style.display = "none";
+  }, 300);
+});
+
 const onloadFunction = () => {
   let imageIDs = [
     "redirect-to-play-game-image-btn-1",
@@ -238,6 +251,7 @@ function endGame(scoreDisplay) {
 }
 
 // lightsaber game
+<<<<<<< HEAD
 lightsaberLight = document.querySelector(".locked-door-light-3");
 lightsaberEndGame = document.querySelector(".lightsaber-btn-close");
 
@@ -253,4 +267,12 @@ lightsaberEndGame.addEventListener("click", () => {
       window.location.href = "game.html";
     });
   }
+=======
+const saberFinishedLock = document.querySelector(".saber-lock-change-color");
+const lightSaberLock = document.querySelector(".lightsaber-lock");
+const saberBtn = document.getElementById("#closeBtn");
+
+saberBtn.addEventListener("click", function onClick() {
+  lightSaberLock.classList.toggle(".saber-lock-change-color");
+>>>>>>> 4957b55 (Adding modal which display after user's redirects to the game.html page)
 });

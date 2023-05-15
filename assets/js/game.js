@@ -23,7 +23,7 @@ const onloadFunction = () => {
   }
 };
 
-// toggles claslist to dispaly contnent in animcation for yoda words game
+// toggles claslist to dispaly content in animation for yoda words game
 
 yodaGameSpan = document.querySelector(".redirect-to-play-game-image-btn-1");
 yodaGrid = document.querySelector(".yoda-words-game-grid");
@@ -210,3 +210,12 @@ function endGame(scoreDisplay) {
     displayLoseModal();
   }
 }
+
+// lightsaber game
+const saberFinishedLock = document.querySelector(".saber-lock-change-color");
+const lightSaberLock = document.querySelector(".lightsaber-lock");
+const saberBtn = document.getElementById('#closeBtn');
+
+saberBtn.addEventListener('click', function onClick() {
+  lightSaberLock.classList.toggle(".saber-lock-change-color");
+});
